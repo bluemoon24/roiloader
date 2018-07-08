@@ -1,0 +1,53 @@
+{
+  "directories": {
+    "cache": "cache/",
+    "datavolumes": "cache/data/",
+    "portlets": "cache/portlets/"
+  },
+  "portlets": {
+    "headers": "portlethaders.json",
+    "config": "<id>.json",
+    "urls": {
+      "headers": {
+        "url": "http://by0nja.de.bayer.cnb/PortletBuilder/WS/readConfiguration_pulbu.php",
+        "params": {
+          "format": "json",
+          "view": "basicinfolistview"
+        }
+      },
+      "config": {
+        "url": "http://by0nja.de.bayer.cnb/PortletBuilder/WS/readConfiguration_pulbu.php",
+        "params": {
+          "format": "json",
+          "view": "configview",
+          "cwid": "",
+          "lockConfig": "false",
+          "forceToken": "false"
+        }
+      }
+    }
+  },
+
+  "datasources": [
+    {
+      "sysid": "h2r",
+      "syname": "DataOne Production",
+      "systype": "sapbw",
+      "endpoints": {
+        "definition": "https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_d/default.bsp",
+        "structures": "https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_sr/default.bsp",
+        "data": "https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_rest_qr_p2/default.bsp"
+      }
+    },
+    {
+      "sysid": "h2d",
+      "syname": "DataOne Development",
+      "systype": "sapbw",
+      "endpoints": {
+        "definition": "https://by-dch2d.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_d/default.bsp",
+        "structures": "https://by-dch2d.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_sr/default.bsp",
+        "data": "https://by-dch2d.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_rest_qr_p2/default.bsp"
+      }
+    }
+  ]
+}
