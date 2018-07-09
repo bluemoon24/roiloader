@@ -86,7 +86,8 @@ class Services {
       })
       let pcd = transformPortletConfig(response.data[0])
       state.portletConfigData = pcd
-      this.cachePortletConfigData()
+      if (state.portletConfigData) this.cachePortletConfigData()
+      else throw (`Config not found on server for ${pid.scope}${pid.id}`)
       return pcd
     } catch (err) {
       let fname = state.portlets.config.replace('<id>', '' + pid.scope + pid.id)
