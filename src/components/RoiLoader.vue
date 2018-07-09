@@ -5,7 +5,6 @@
       <v-btn @click="getData('PROD4069')">Get PROD4069 Data</v-btn>
       <v-btn @click="getData('PROD2576')">Get PROD2576 Data</v-btn>
       <v-btn @click="getData('EXPERIMENTAL0001')">Get EXPERIMENTAL0001</v-btn>
-      <!-- <v-btn @click="getArcGisData('HHS_People_per_Healthcare_Facility')">Get Arcgis Data</v-btn> -->
     </v-toolbar>
       <v-layout column align-center>
         <v-container fluid grid-list-md>
@@ -59,17 +58,6 @@ export default {
       this.textarea = JSON.stringify(this.data)
     },
 
-    async getArcGisData() {
-      this.textarea = ''
-      this.taloading = true
-      let services = await arcgis.getDataVolumeServices(this.asource)
-      let volumes = await arcgis.getDataVolumeCatalogue(this.asource, 'A-16/HHS_Healthcare_Resources')
-      let volume = await arcgis.getDataVolumeDefinition(this.asource, 'A-16/HHS_Healthcare_Resources', 0)
-      this.data = await arcgis.getDataVolume(this.asource, 'A-16/HHS_Healthcare_Resources', 0)
-       this.taloading = false
-       this.textarea = JSON.stringify(this.data)
-    },
-
     async getData(pid) {
       this.textarea = ''
       this.taloading = true
@@ -79,7 +67,7 @@ export default {
       }
        this.data = await this.rdl.getData(pid, params)
        this.taloading = false
-       this.textarea = JSON.stringify(this.data)
+       this.textarea = JSON.stringify(this.data, null, '\t')
     }
   }
 }
