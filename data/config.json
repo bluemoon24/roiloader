@@ -48,6 +48,18 @@
         "structures": "https://by-dch2d.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_sr/default.bsp",
         "data": "https://by-dch2d.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_rest_qr_p2/default.bsp"
       }
+    },
+    {
+      "sysid": "agho",
+      "syname": "ArcGIS Hub online",
+      "systype": "arcgis",
+      "endpoints": {
+        "services": "http://maps6.arcgisonline.com/ArcGIS/rest/services/A-16/?f=pjson",
+        "volumecatalogue": "http://maps6.arcgisonline.com/arcgis/rest/services/<service>/<type>?f=pjson",
+        "definition": "http://maps6.arcgisonline.com/arcgis/rest/services/<volid>?f=pjson",
+        "data": "http://maps6.arcgisonline.com/ArcGIS/rest/services/<volid>/query"
+      }
     }
+
   ]
 }

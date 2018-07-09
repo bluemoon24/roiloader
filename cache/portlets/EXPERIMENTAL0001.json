@@ -1,0 +1,14 @@
+{
+  "id": "0001",
+  "notes": "Experimental show case for internet based data volumes",
+  "scope": "EXPERIMENTAL",
+  "config": {
+    "id": "0001",
+    "defaultTitle": "Facilities per state (experimental)",
+    "scope": "EXPERIMENTAL",
+    "system": "agho",
+    "volume": {
+      "id": "A-16/HHS_Healthcare_Resources/MapServer/0"
+    }
+  }
+}

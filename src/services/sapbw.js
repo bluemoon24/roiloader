@@ -1,7 +1,5 @@
 import axios from 'axios'
 
-let fs = require('fs')
-
 export default {
   props: ['source', 'endpoint'],
 

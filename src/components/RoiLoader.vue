@@ -4,7 +4,8 @@
       <v-btn @click="getData('PROD4068')">Get PROD4068 Data</v-btn>
       <v-btn @click="getData('PROD4069')">Get PROD4069 Data</v-btn>
       <v-btn @click="getData('PROD2576')">Get PROD2576 Data</v-btn>
-      <v-btn @click="getPortletHeaders()">Get Portlet Headers</v-btn>
+      <v-btn @click="getData('EXPERIMENTAL0001')">Get EXPERIMENTAL0001</v-btn>
+      <!-- <v-btn @click="getArcGisData('HHS_People_per_Healthcare_Facility')">Get Arcgis Data</v-btn> -->
     </v-toolbar>
       <v-layout column align-center>
         <v-container fluid grid-list-md>
@@ -23,7 +24,7 @@
 
 <script>
 import { RoiDataLoader } from '@/components/roi-dataloader.js'
-
+import arcgis from '@/services/arcgis.js'
 
 export default {
   name: 'roi-loader',
@@ -31,11 +32,22 @@ export default {
     textarea: '',
     data: '',
     rdl: '',
-    taloading: false
+    taloading: false,
+    asource:
+      {
+        sysid: "agho",
+        syname: "ArcGIS Hub online",
+        systype: "arcgis",
+        endpoints: {
+          services: "http://maps6.arcgisonline.com/ArcGIS/rest/services/A-16/?f=pjson",
+          volumecatalogue: "http://maps6.arcgisonline.com/arcgis/rest/services/<service>/<type>?f=pjson",
+          volume: "http://maps6.arcgisonline.com/arcgis/rest/services/<service>/<type>/<volid>?f=pjson",
+          data: "http://maps6.arcgisonline.com/ArcGIS/rest/services/<service>/<type>/<volid>/query?f=json"
+        }
+      }
   }),
 
   created () {
-    console.log('reated')
     this.rdl = new RoiDataLoader()
   },
 
@@ -45,6 +57,17 @@ export default {
       this.data = await this.rdl.getPortletHeaders()
       this.taloading = false
       this.textarea = JSON.stringify(this.data)
+    },
+
+    async getArcGisData() {
+      this.textarea = ''
+      this.taloading = true
+      let services = await arcgis.getDataVolumeServices(this.asource)
+      let volumes = await arcgis.getDataVolumeCatalogue(this.asource, 'A-16/HHS_Healthcare_Resources')
+      let volume = await arcgis.getDataVolumeDefinition(this.asource, 'A-16/HHS_Healthcare_Resources', 0)
+      this.data = await arcgis.getDataVolume(this.asource, 'A-16/HHS_Healthcare_Resources', 0)
+       this.taloading = false
+       this.textarea = JSON.stringify(this.data)
     },
 
     async getData(pid) {

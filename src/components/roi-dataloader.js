@@ -1,4 +1,5 @@
 import sapbw from '@/services/sapbw.js'
+import arcgis from '@/services/arcgis.js'
 const fs = require('fs')
 const axios = require('axios')
 
@@ -119,7 +120,6 @@ class Services {
   }
 
   async getDatavolumeDefinition(dvbase) {
-    // console.log('calling getData', sapbw.getData('definition'))
     let source = state.datasources.find((e) => (e.sysid === dvbase.sysid))
     let params = {
       endpoint: 'definition',
@@ -131,7 +131,10 @@ class Services {
       switch (source.systype) {
         case 'sapbw':
           def = await sapbw.getDataVolumeDefinition(source, params)
-          break;
+          break
+        case 'arcgis':
+          def = await arcgis.getDataVolumeDefinition(source, params)
+        break;
       }
       this.cacheDefinition({path: path, data: def, source: source})
     } catch (err) {
@@ -163,7 +166,7 @@ class Services {
   }
 
   async getDatavolume(params) {
-    console.log('rl getDatavolume params', params)
+    console.log('rl getDatavolume params, datavolume', params, state.datavolume)
     let md5 = require('md5')
     let data
     let source = state.datavolume.source
@@ -172,7 +175,10 @@ class Services {
       switch (source.systype) {
         case 'sapbw':
           data = await sapbw.getDataVolume(source, state.datavolume.definition, params)
-          break;
+        break
+        case 'arcgis':
+          data = await arcgis.getDataVolume(source, state.datavolume.definition, params)
+        break
       }
       state.datavolume = {definition: state.datavolume.definition, data: data, source: source,  dvbase: dvbase}
       this.cacheDatavolumeData(params)
@@ -249,7 +255,7 @@ export class RoiLoader {
   async getDatavolumeDefinition (dvbase) {
     let data = await services.getDatavolumeDefinition(dvbase)
     // state.datavolume = data
-    console.log('data volume definition from roiloader', data)
+    console.log('data volume definition from roiloader', data, dvbase)
     return data
   }
 
