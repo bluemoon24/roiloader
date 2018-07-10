@@ -1,1 +1,627 @@
-{"id":"4068","notes":"Transport requested by WDELL 01/06/2018","scope":"PROD","config":{"axes":{"verticalAxis":{"nonDrillTitle":"","nonDrillAppendix":"","drillTitle":"","drillAppendix":"","hide":"false","hideLine":"true","hideAxisLabel":"false"},"horizontalAxis":{"nonDrillTitle":"smart","nonDrillAppendix":"","drillTitle":"smart","drillAppendix":"","hide":"true","placement":"top","hideTitle":"false"}},"dataChanges":{"keyfigure":{"id":"07","calcType":"CALC","from":"03PY","to":"01TOTAL"},"calculateRemaining":"false","removeTotalRow":"false","zeroThreshold":"","resultRowPosition":"2","resultRowLabel":"","othersRowLabel":"","othersRowPosition":"1","useSpecialOthersVisualization":"false","useSpecialTotalVisualization":"false","excludeFromRemaining":""},"views":{"view":[{"chart":[{"group":{"columns":{"col":{"id":"01 ACT YTD","series":"waterfall","applyScale":"true","appendix":"SCALE UNIT","decimal":"0"}},"rows":{"row":[{"id":"Consolidated Country Profit","isPillar":"true"},{"id":"Country Cash Flow","isPillar":"true"},{"id":"TA"},{"id":"TL"},{"id":"∆ Inventory"},{"id":"∆ Trade Accounts Receivable"},{"id":"∆ Refund Liabilities"}]}},"pos":"0.0","hideTitle":"false","showLegend":"false","hAxisTitle":"ACT","hAxisNonDrillTitle":"ACT"},{"group":{"columns":{"col":{"id":"1.1 ∆ PY","series":"deviation","applyScale":"true","appendix":"SCALE UNIT","decimal":"0"}},"rows":{}},"pos":"2.0"},{"group":{"columns":{"col":{"id":"4.1 TOGO &D0VERSION_TEXT2&","series":"number","applyScale":"true","appendix":"SCALE UNIT","decimal":"0"}},"rows":{}},"pos":"3.0"},{"group":{"columns":{"col":{"id":"1.2 ∆ PY %","series":"deviationRect","applyScale":"true","appendix":"SCALE UNIT","decimal":"0"}},"rows":{}},"pos":"1.0"},{"group":{"columns":{"col":{"id":"04.1 FY &D0VERSION_TEXT2&","series":"number","applyScale":"true","appendix":"SCALE UNIT","decimal":"0"}},"rows":{}},"pos":"4.0"}],"id":"v02","label":"YTD vs MR","desiredColumnWidths":"40,20,20,10,10","defaultSort":"none","firstColGutterRight":"4","aggregationType":"","defaultSortOrder":"2","smartViewTag":"DS:MR"},{"chart":[{"group":{"columns":{"col":{"id":"01 ACT YTD","series":"waterfall","applyScale":"true","appendix":"SCALE UNIT","decimal":"0"}},"rows":{"row":[{"id":"Consolidated Country Profit","isPillar":"true"},{"id":"Country Cash Flow","isPillar":"true"},{"id":"TA"},{"id":"TL"},{"id":"∆ Inventory"},{"id":"∆ Trade Accounts Receivable"},{"id":"∆ Refund Liabilities"}]}},"pos":"0.0","hideTitle":"false","showLegend":"false","hAxisTitle":"ACT","hAxisNonDrillTitle":"ACT"},{"group":{"columns":{"col":{"id":"1.1 ∆ PY","series":"deviation","applyScale":"true","appendix":"SCALE UNIT","decimal":"0"}},"rows":{}},"pos":"2.0"}],"id":"v01","label":"YTD vs PY","desiredColumnWidths":"60,10,30","defaultSort":"none","firstColGutterRight":"4","aggregationType":"","defaultSortOrder":"2","smartViewTag":"DS:PY"}],"createSeriesFrom":"columns","default":"v02","editing":"v02","identifyColumnsByPrefix":"true","resultRowPosition":"2","othersRowPosition":"1","resultRowLabel":"Total","othersRowLabel":"Remaining","queryHasResultRows":"true","sortResultRowTo":"1","calculateRemaining":"true","remainingLabel":"Remaining"},"deviationCols":{"positiveColor":"0x005598","showDataLabels":"true","negativeColor":"0xC32A1F","center":"true","chartBackgroundColors":"false","neutralColor":"0x676767"},"colors":{},"keyfigureConfig":"\n    >\n    \n    \n    \n    \n  ","table":{"basedOn":"chartView","nonValueColumns":"dropLast","lockNonValueColumns":"true","groupAppendix":"true"},"queryRows":{"id":"DefaultGroup","defaultRow":""},"id":"4068","defaultTitle":"BP1: CashFlow Waterfall","classname":"com.bayer.bi.portlets.basePortlets.BarChartTemplateWithDeviationsX","scope":"PROD","portletInfoURL":"http://bi-wiki.intranet.cnb/artikel.php?artikelArtName=portlet&ID=422","defaultShortcuts":"","defaultCacheTTL":"480","defaultViewState":"first","defaultLegendDirection":"none","enableScale":"true","defaultScaling":"1000000","enableDrilldown":"false","enableDrilldownByNone":"false","defaultDrill":"None","enableZoomingAndScrolling":"true","enableChartTypeSelection":"false","defaultChartType":"overlaid","enableChangeOfTableGrouping":"false","defaultGroupByDrillItems":"false","topNFilterKeyName":"Ranking","isActive":"1","showInFinder":"1","finderImage":"Bars","defaultSortType":"none","hideGridLines":"true","system":"H2R","category":"Sales","availableSortChoices":"none","enableMultiJump":"true","availableChartTypeChoices":"overlaid","ca":"8","versionFrom":"3.3.001","finderTitle":"BP1: CashFlow Waterfall","enableTotalIndicatorInStackedMode":"false","scalingChoices":"1,1000,1000000","hideOrigin":"false","barColorScheme":"BarChartTemplateDefaultColors","negativeColor":"0xC32A1F","defaultSortOrder":"1","neutralColor":"0x676767","positiveColor":"0x005598","commentId":"BP_CF","volume":{"moduleFilter":[{"@attributes":{"filterKey":"","filterKeyName":"Ranking","filterTechName":"Z0COND_FDSOI01","defaultValue":"10","toValue":"","isPublic":"1","DrillName":"","portletBuilderIdentifier":"Z0COND_FDSOI01:","ioName":"1FORMULA","variableType":"P","isHierarchy":"false"}},{"@attributes":{"filterKey":"MAGIC_KEY_HIER","filterKeyName":"Business View Hierarchy","filterTechName":"DDIMKKAX_HDSOI02","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKAX","portletBuilderIdentifier":"DDIMKKAX_HDSOI02:DIMKKAX","ioName":"BSV: Hierarchy","variableType":"P"}},{"@attributes":{"filterKey":"MAGIC_KEY_L1","filterKeyName":"Division (L1)","filterTechName":"DDIMKKA1_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKA1","portletBuilderIdentifier":"DDIMKKA1_CDOOI01:DIMKKA1","ioName":"BSV Lvl 1","variableType":"S"}},{"@attributes":{"filterKey":"MAGIC_KEY_L2","filterKeyName":"Business View (L2)","filterTechName":"DDIMKKA2_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKA2","portletBuilderIdentifier":"DDIMKKA2_CDOOI01:DIMKKA2","ioName":"BSV Lvl 2","variableType":"S"}},{"@attributes":{"filterKey":"MAGIC_KEY_L3","filterKeyName":"Business View (L3)","filterTechName":"DDIMKKA3_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKA3","portletBuilderIdentifier":"DDIMKKA3_CDOOI01:DIMKKA3","ioName":"BSV Lvl 3","variableType":"S"}},{"@attributes":{"filterKey":"MAGIC_KEY_L4","filterKeyName":"Business View (L4)","filterTechName":"DDIMKKA4_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKA4","portletBuilderIdentifier":"DDIMKKA4_CDOOI01:DIMKKA4","ioName":"BSV Lvl 4","variableType":"S"}},{"@attributes":{"filterKey":"MAGIC_KEY_L5","filterKeyName":"Business View (L5)","filterTechName":"DDIMKKA5_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKA5","portletBuilderIdentifier":"DDIMKKA5_CDOOI01:DIMKKA5","ioName":"BSV Lvl 5","variableType":"S"}},{"@attributes":{"filterKey":"MAGIC_KEY_L6","filterKeyName":"Business View (L6)","filterTechName":"DDIMKKA6_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKA6","portletBuilderIdentifier":"DDIMKKA6_CDOOI01:DIMKKA6","ioName":"BSV Lvl 6","variableType":"S"}},{"@attributes":{"filterKey":"DK_GB","filterKeyName":"Business Group","filterTechName":"DPC__DBG","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DPC__DBG","portletBuilderIdentifier":"DPC__DBG:DPC__DBG","ioName":"Business Group","variableType":""}},{"@attributes":{"filterKey":"DSBE","filterKeyName":"Strategic Business Entity","filterTechName":"DDSBE_CDOOISBE","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DSBE","portletBuilderIdentifier":"DDSBE_CDOOISBE:DSBE","ioName":"SBE","variableType":"S"}},{"@attributes":{"filterKey":"DRU","filterKeyName":"Reporting Unit","filterTechName":"DDRU_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DRU","portletBuilderIdentifier":"DDRU_CDOOI01:DRU","ioName":"Reporting Unit","variableType":"S"}},{"@attributes":{"filterKey":"MAGIC_KEY_COUNTRY_GROUP","filterKeyName":"Country Group","filterTechName":"DDIMKKACG_CDOOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DIMKKACG","portletBuilderIdentifier":"DDIMKKACG_CDOOI01:DIMKKACG","ioName":"BSV CG","variableType":"S","logic":"1"}},{"@attributes":{"filterKey":"0COUNTRY","filterKeyName":"Country","filterTechName":"DCOUNTRY_CDMOI01","defaultValue":"","toValue":"","isPublic":"1","DrillName":"DCTRY_FD","portletBuilderIdentifier":"DCOUNTRY_CDMOI01:DCTRY_FD","ioName":"Country final-dest.","variableType":"M"}},{"@attributes":{"filterKey":"DATE","format":"MM.YYYY","filterKeyName":"Month/Year","filterTechName":"D0FISCPER_CXSNI00","defaultValue":"","toValue":"","isPublic":"1","DrillName":"","portletBuilderIdentifier":"D0FISCPER_CXSNI00:0FISCPER","ioName":"Fiscal year/period","variableType":"P"}},{"@attributes":{"filterKey":"0CURRENCY","filterKeyName":"Currency","filterTechName":"DCURRENCY_CDSOI01","defaultValue":"EUR","toValue":"","isPublic":"1","DrillName":"","portletBuilderIdentifier":"DCURRENCY_CDSOI01:","Mandatory":"true","ioName":"Currency","variableType":"P","isHierarchy":"false"}},{"@attributes":{"filterKey":"","filterKeyName":"Version","filterTechName":"D0VERSION_CXSMIFC2","defaultValue":"","toValue":"","isPublic":"1","DrillName":"","portletBuilderIdentifier":"D0VERSION_CXSMIFC2:","Mandatory":"true","ioName":"Version","variableType":"P","isHierarchy":"false"}},{"@attributes":{"filterKey":"","filterKeyName":"ROI: Deviations (Keep Sign)","filterTechName":"","defaultValue":"","toValue":"","isPublic":"0","DrillName":"","portletBuilderIdentifier":"00O2TK9973U0HI1AFYKGQIF4H:00O2TK9973U0HI1AFYKGQIF4H","ioName":"ROI: Deviations (Keep Sign)","variableType":"STR"}},{"@attributes":{"filterKey":"","filterKeyName":"Income Statement (P&L) + CF","filterTechName":"","defaultValue":"","toValue":"","isPublic":"0","DrillName":"","portletBuilderIdentifier":"00O2TK9973U0HI1AFYKGQK00H:00O2TK9973U0HI1AFYKGQK00H","ioName":"Income Statement (P&L) + CF","variableType":"STR"}},{"@attributes":{"filterKey":"","filterKeyName":"InfoProvider","filterTechName":"","defaultValue":"","toValue":"","isPublic":"0","DrillName":"","portletBuilderIdentifier":"0INFOPROV:0INFOPROV","ioName":"InfoProvider","variableType":""}},{"@attributes":{"filterKey":"","filterKeyName":"Object Type","filterTechName":"","defaultValue":"","toValue":"","isPublic":"0","DrillName":"","portletBuilderIdentifier":"0IOBJSV:0IOBJSV","ioName":"Object Type","variableType":""}},{"@attributes":{"filterKey":"","filterKeyName":"Item","filterTechName":"","defaultValue":"","toValue":"","isPublic":"0","DrillName":"","portletBuilderIdentifier":"0CS_ITEM:0CS_ITEM","ioName":"Item","variableType":""}}],"id":"SOA00_COPAPRPCF_QS022","lastChanged":"2018-05-22 18:27:20","enableAO":"true","analysisQuery":"","ignoreWarnings":"STRUC_IS,MAGIC_KEY_HIER"}},"lastChangedBy":"wdell","lastChanged":"2018-05-22 18:30:12","token":"","tokenAddedOn":null,"transportStatus":"1"}
+{
+	"id": "4068",
+	"notes": "Transport requested by WDELL 01/06/2018",
+	"scope": "PROD",
+	"config": {
+		"axes": {
+			"verticalAxis": {
+				"nonDrillTitle": "",
+				"nonDrillAppendix": "",
+				"drillTitle": "",
+				"drillAppendix": "",
+				"hide": "false",
+				"hideLine": "true",
+				"hideAxisLabel": "false"
+			},
+			"horizontalAxis": {
+				"nonDrillTitle": "smart",
+				"nonDrillAppendix": "",
+				"drillTitle": "smart",
+				"drillAppendix": "",
+				"hide": "true",
+				"placement": "top",
+				"hideTitle": "false"
+			}
+		},
+		"dataChanges": {
+			"keyfigure": {
+				"id": "07",
+				"calcType": "CALC",
+				"from": "03PY",
+				"to": "01TOTAL"
+			},
+			"calculateRemaining": "false",
+			"removeTotalRow": "false",
+			"zeroThreshold": "",
+			"resultRowPosition": "2",
+			"resultRowLabel": "",
+			"othersRowLabel": "",
+			"othersRowPosition": "1",
+			"useSpecialOthersVisualization": "false",
+			"useSpecialTotalVisualization": "false",
+			"excludeFromRemaining": ""
+		},
+		"views": {
+			"view": [
+				{
+					"chart": [
+						{
+							"group": {
+								"columns": {
+									"col": {
+										"id": "01 ACT YTD",
+										"series": "waterfall",
+										"applyScale": "true",
+										"appendix": "SCALE UNIT",
+										"decimal": "0"
+									}
+								},
+								"rows": {
+									"row": [
+										{
+											"id": "Consolidated Country Profit",
+											"isPillar": "true"
+										},
+										{
+											"id": "Country Cash Flow",
+											"isPillar": "true"
+										},
+										{
+											"id": "TA"
+										},
+										{
+											"id": "TL"
+										},
+										{
+											"id": "∆ Inventory"
+										},
+										{
+											"id": "∆ Trade Accounts Receivable"
+										},
+										{
+											"id": "∆ Refund Liabilities"
+										}
+									]
+								}
+							},
+							"pos": "0.0",
+							"hideTitle": "false",
+							"showLegend": "false",
+							"hAxisTitle": "ACT",
+							"hAxisNonDrillTitle": "ACT"
+						},
+						{
+							"group": {
+								"columns": {
+									"col": {
+										"id": "1.1 ∆ PY",
+										"series": "deviation",
+										"applyScale": "true",
+										"appendix": "SCALE UNIT",
+										"decimal": "0"
+									}
+								},
+								"rows": {}
+							},
+							"pos": "2.0"
+						},
+						{
+							"group": {
+								"columns": {
+									"col": {
+										"id": "4.1 TOGO &D0VERSION_TEXT2&",
+										"series": "number",
+										"applyScale": "true",
+										"appendix": "SCALE UNIT",
+										"decimal": "0"
+									}
+								},
+								"rows": {}
+							},
+							"pos": "3.0"
+						},
+						{
+							"group": {
+								"columns": {
+									"col": {
+										"id": "1.2 ∆ PY %",
+										"series": "deviationRect",
+										"applyScale": "true",
+										"appendix": "SCALE UNIT",
+										"decimal": "0"
+									}
+								},
+								"rows": {}
+							},
+							"pos": "1.0"
+						},
+						{
+							"group": {
+								"columns": {
+									"col": {
+										"id": "04.1 FY &D0VERSION_TEXT2&",
+										"series": "number",
+										"applyScale": "true",
+										"appendix": "SCALE UNIT",
+										"decimal": "0"
+									}
+								},
+								"rows": {}
+							},
+							"pos": "4.0"
+						}
+					],
+					"id": "v02",
+					"label": "YTD vs MR",
+					"desiredColumnWidths": "40,20,20,10,10",
+					"defaultSort": "none",
+					"firstColGutterRight": "4",
+					"aggregationType": "",
+					"defaultSortOrder": "2",
+					"smartViewTag": "DS:MR"
+				},
+				{
+					"chart": [
+						{
+							"group": {
+								"columns": {
+									"col": {
+										"id": "01 ACT YTD",
+										"series": "waterfall",
+										"applyScale": "true",
+										"appendix": "SCALE UNIT",
+										"decimal": "0"
+									}
+								},
+								"rows": {
+									"row": [
+										{
+											"id": "Consolidated Country Profit",
+											"isPillar": "true"
+										},
+										{
+											"id": "Country Cash Flow",
+											"isPillar": "true"
+										},
+										{
+											"id": "TA"
+										},
+										{
+											"id": "TL"
+										},
+										{
+											"id": "∆ Inventory"
+										},
+										{
+											"id": "∆ Trade Accounts Receivable"
+										},
+										{
+											"id": "∆ Refund Liabilities"
+										}
+									]
+								}
+							},
+							"pos": "0.0",
+							"hideTitle": "false",
+							"showLegend": "false",
+							"hAxisTitle": "ACT",
+							"hAxisNonDrillTitle": "ACT"
+						},
+						{
+							"group": {
+								"columns": {
+									"col": {
+										"id": "1.1 ∆ PY",
+										"series": "deviation",
+										"applyScale": "true",
+										"appendix": "SCALE UNIT",
+										"decimal": "0"
+									}
+								},
+								"rows": {}
+							},
+							"pos": "2.0"
+						}
+					],
+					"id": "v01",
+					"label": "YTD vs PY",
+					"desiredColumnWidths": "60,10,30",
+					"defaultSort": "none",
+					"firstColGutterRight": "4",
+					"aggregationType": "",
+					"defaultSortOrder": "2",
+					"smartViewTag": "DS:PY"
+				}
+			],
+			"createSeriesFrom": "columns",
+			"default": "v02",
+			"editing": "v02",
+			"identifyColumnsByPrefix": "true",
+			"resultRowPosition": "2",
+			"othersRowPosition": "1",
+			"resultRowLabel": "Total",
+			"othersRowLabel": "Remaining",
+			"queryHasResultRows": "true",
+			"sortResultRowTo": "1",
+			"calculateRemaining": "true",
+			"remainingLabel": "Remaining"
+		},
+		"deviationCols": {
+			"positiveColor": "0x005598",
+			"showDataLabels": "true",
+			"negativeColor": "0xC32A1F",
+			"center": "true",
+			"chartBackgroundColors": "false",
+			"neutralColor": "0x676767"
+		},
+		"colors": {},
+		"keyfigureConfig": "\n    >\n    \n    \n    \n    \n  ",
+		"table": {
+			"basedOn": "chartView",
+			"nonValueColumns": "dropLast",
+			"lockNonValueColumns": "true",
+			"groupAppendix": "true"
+		},
+		"queryRows": {
+			"id": "DefaultGroup",
+			"defaultRow": ""
+		},
+		"id": "4068",
+		"defaultTitle": "BP1: CashFlow Waterfall",
+		"classname": "com.bayer.bi.portlets.basePortlets.BarChartTemplateWithDeviationsX",
+		"scope": "PROD",
+		"portletInfoURL": "http://bi-wiki.intranet.cnb/artikel.php?artikelArtName=portlet&ID=422",
+		"defaultShortcuts": "",
+		"defaultCacheTTL": "480",
+		"defaultViewState": "first",
+		"defaultLegendDirection": "none",
+		"enableScale": "true",
+		"defaultScaling": "1000000",
+		"enableDrilldown": "false",
+		"enableDrilldownByNone": "false",
+		"defaultDrill": "None",
+		"enableZoomingAndScrolling": "true",
+		"enableChartTypeSelection": "false",
+		"defaultChartType": "overlaid",
+		"enableChangeOfTableGrouping": "false",
+		"defaultGroupByDrillItems": "false",
+		"topNFilterKeyName": "Ranking",
+		"isActive": "1",
+		"showInFinder": "1",
+		"finderImage": "Bars",
+		"defaultSortType": "none",
+		"hideGridLines": "true",
+		"system": "H2R",
+		"category": "Sales",
+		"availableSortChoices": "none",
+		"enableMultiJump": "true",
+		"availableChartTypeChoices": "overlaid",
+		"ca": "8",
+		"versionFrom": "3.3.001",
+		"finderTitle": "BP1: CashFlow Waterfall",
+		"enableTotalIndicatorInStackedMode": "false",
+		"scalingChoices": "1,1000,1000000",
+		"hideOrigin": "false",
+		"barColorScheme": "BarChartTemplateDefaultColors",
+		"negativeColor": "0xC32A1F",
+		"defaultSortOrder": "1",
+		"neutralColor": "0x676767",
+		"positiveColor": "0x005598",
+		"commentId": "BP_CF",
+		"volume": {
+			"moduleFilter": [
+				{
+					"@attributes": {
+						"filterKey": "",
+						"filterKeyName": "Ranking",
+						"filterTechName": "Z0COND_FDSOI01",
+						"defaultValue": "10",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "",
+						"portletBuilderIdentifier": "Z0COND_FDSOI01:",
+						"ioName": "1FORMULA",
+						"variableType": "P",
+						"isHierarchy": "false"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_HIER",
+						"filterKeyName": "Business View Hierarchy",
+						"filterTechName": "DDIMKKAX_HDSOI02",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKAX",
+						"portletBuilderIdentifier": "DDIMKKAX_HDSOI02:DIMKKAX",
+						"ioName": "BSV: Hierarchy",
+						"variableType": "P"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_L1",
+						"filterKeyName": "Division (L1)",
+						"filterTechName": "DDIMKKA1_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKA1",
+						"portletBuilderIdentifier": "DDIMKKA1_CDOOI01:DIMKKA1",
+						"ioName": "BSV Lvl 1",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_L2",
+						"filterKeyName": "Business View (L2)",
+						"filterTechName": "DDIMKKA2_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKA2",
+						"portletBuilderIdentifier": "DDIMKKA2_CDOOI01:DIMKKA2",
+						"ioName": "BSV Lvl 2",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_L3",
+						"filterKeyName": "Business View (L3)",
+						"filterTechName": "DDIMKKA3_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKA3",
+						"portletBuilderIdentifier": "DDIMKKA3_CDOOI01:DIMKKA3",
+						"ioName": "BSV Lvl 3",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_L4",
+						"filterKeyName": "Business View (L4)",
+						"filterTechName": "DDIMKKA4_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKA4",
+						"portletBuilderIdentifier": "DDIMKKA4_CDOOI01:DIMKKA4",
+						"ioName": "BSV Lvl 4",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_L5",
+						"filterKeyName": "Business View (L5)",
+						"filterTechName": "DDIMKKA5_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKA5",
+						"portletBuilderIdentifier": "DDIMKKA5_CDOOI01:DIMKKA5",
+						"ioName": "BSV Lvl 5",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_L6",
+						"filterKeyName": "Business View (L6)",
+						"filterTechName": "DDIMKKA6_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKA6",
+						"portletBuilderIdentifier": "DDIMKKA6_CDOOI01:DIMKKA6",
+						"ioName": "BSV Lvl 6",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "DK_GB",
+						"filterKeyName": "Business Group",
+						"filterTechName": "DPC__DBG",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DPC__DBG",
+						"portletBuilderIdentifier": "DPC__DBG:DPC__DBG",
+						"ioName": "Business Group",
+						"variableType": ""
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "DSBE",
+						"filterKeyName": "Strategic Business Entity",
+						"filterTechName": "DDSBE_CDOOISBE",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DSBE",
+						"portletBuilderIdentifier": "DDSBE_CDOOISBE:DSBE",
+						"ioName": "SBE",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "DRU",
+						"filterKeyName": "Reporting Unit",
+						"filterTechName": "DDRU_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DRU",
+						"portletBuilderIdentifier": "DDRU_CDOOI01:DRU",
+						"ioName": "Reporting Unit",
+						"variableType": "S"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "MAGIC_KEY_COUNTRY_GROUP",
+						"filterKeyName": "Country Group",
+						"filterTechName": "DDIMKKACG_CDOOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DIMKKACG",
+						"portletBuilderIdentifier": "DDIMKKACG_CDOOI01:DIMKKACG",
+						"ioName": "BSV CG",
+						"variableType": "S",
+						"logic": "1"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "0COUNTRY",
+						"filterKeyName": "Country",
+						"filterTechName": "DCOUNTRY_CDMOI01",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "DCTRY_FD",
+						"portletBuilderIdentifier": "DCOUNTRY_CDMOI01:DCTRY_FD",
+						"ioName": "Country final-dest.",
+						"variableType": "M"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "DATE",
+						"format": "MM.YYYY",
+						"filterKeyName": "Month/Year",
+						"filterTechName": "D0FISCPER_CXSNI00",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "",
+						"portletBuilderIdentifier": "D0FISCPER_CXSNI00:0FISCPER",
+						"ioName": "Fiscal year/period",
+						"variableType": "P"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "0CURRENCY",
+						"filterKeyName": "Currency",
+						"filterTechName": "DCURRENCY_CDSOI01",
+						"defaultValue": "EUR",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "",
+						"portletBuilderIdentifier": "DCURRENCY_CDSOI01:",
+						"Mandatory": "true",
+						"ioName": "Currency",
+						"variableType": "P",
+						"isHierarchy": "false"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "",
+						"filterKeyName": "Version",
+						"filterTechName": "D0VERSION_CXSMIFC2",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "1",
+						"DrillName": "",
+						"portletBuilderIdentifier": "D0VERSION_CXSMIFC2:",
+						"Mandatory": "true",
+						"ioName": "Version",
+						"variableType": "P",
+						"isHierarchy": "false"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "",
+						"filterKeyName": "ROI: Deviations (Keep Sign)",
+						"filterTechName": "",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "0",
+						"DrillName": "",
+						"portletBuilderIdentifier": "00O2TK9973U0HI1AFYKGQIF4H:00O2TK9973U0HI1AFYKGQIF4H",
+						"ioName": "ROI: Deviations (Keep Sign)",
+						"variableType": "STR"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "",
+						"filterKeyName": "Income Statement (P&L) + CF",
+						"filterTechName": "",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "0",
+						"DrillName": "",
+						"portletBuilderIdentifier": "00O2TK9973U0HI1AFYKGQK00H:00O2TK9973U0HI1AFYKGQK00H",
+						"ioName": "Income Statement (P&L) + CF",
+						"variableType": "STR"
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "",
+						"filterKeyName": "InfoProvider",
+						"filterTechName": "",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "0",
+						"DrillName": "",
+						"portletBuilderIdentifier": "0INFOPROV:0INFOPROV",
+						"ioName": "InfoProvider",
+						"variableType": ""
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "",
+						"filterKeyName": "Object Type",
+						"filterTechName": "",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "0",
+						"DrillName": "",
+						"portletBuilderIdentifier": "0IOBJSV:0IOBJSV",
+						"ioName": "Object Type",
+						"variableType": ""
+					}
+				},
+				{
+					"@attributes": {
+						"filterKey": "",
+						"filterKeyName": "Item",
+						"filterTechName": "",
+						"defaultValue": "",
+						"toValue": "",
+						"isPublic": "0",
+						"DrillName": "",
+						"portletBuilderIdentifier": "0CS_ITEM:0CS_ITEM",
+						"ioName": "Item",
+						"variableType": ""
+					}
+				}
+			],
+			"id": "SOA00_COPAPRPCF_QS022",
+			"lastChanged": "2018-05-22 18:27:20",
+			"enableAO": "true",
+			"analysisQuery": "",
+			"ignoreWarnings": "STRUC_IS,MAGIC_KEY_HIER"
+		}
+	},
+	"lastChangedBy": "wdell",
+	"lastChanged": "2018-05-22 18:30:12",
+	"token": "",
+	"tokenAddedOn": null,
+	"transportStatus": "1"
+}

@@ -1,1 +1,10 @@
-{"sysid":"h2r","syname":"DataOne Production","systype":"sapbw","endpoints":{"definition":"https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_d/default.bsp","structures":"https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_sr/default.bsp","data":"https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_rest_qr_p2/default.bsp"}}
+{
+	"sysid": "h2r",
+	"syname": "DataOne Production",
+	"systype": "sapbw",
+	"endpoints": {
+		"definition": "https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_d/default.bsp",
+		"structures": "https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_bms_rest_sr/default.bsp",
+		"data": "https://by-dch2r.bayer-ag.com:8001/sap(bD1lbiZjPTIwMA==)/bc/bsp/sap/zdu_rest_qr_p2/default.bsp"
+	}
+}

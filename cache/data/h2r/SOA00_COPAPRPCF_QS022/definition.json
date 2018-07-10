@@ -1,1 +1,2715 @@
-{"version":"","title":"ROI : Cash Flow Deviation","id":"SOA00_COPAPRPCF_QS022","infocube":"COPAPRPCF","creator":"BEMDX","creationDate":"2018-05-29","creationTime":"14:29:35","lastChanger":"WDELL","changeDate":"2018-05-29","changeTime":"14:29:35","lastQueryExecutionDate":"2018-07-08","lastQueryExecutionTime":"12:41:08","available":true,"infoobjects":[{"id":"DIMKKAX","infoobject":"DIMKKAX","name":"BSV: Hierarchy","descript":"BSV: Hierarchy","position":"0001","initialdisplay":"false","ishierarchy":"true","hierarchy":{"id":"BSV_HIER_ALL","name":"","level":"12"},"hienmdesc":"","hienmlevel":"12","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DIMKKA3","infoobject":"DIMKKA3","name":"BSV Lvl 3","descript":"BSV Lvl 3","position":"0002","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DIMKKA4","infoobject":"DIMKKA4","name":"BSV Lvl 4","descript":"BSV Lvl 4","position":"0003","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DIMKKA2","infoobject":"DIMKKA2","name":"BSV Lvl 2","descript":"BSV Lvl 2","position":"0004","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DIMKKA5","infoobject":"DIMKKA5","name":"BSV Lvl 5","descript":"BSV Lvl 5","position":"0005","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DIMKKA6","infoobject":"DIMKKA6","name":"BSV Lvl 6","descript":"BSV Lvl 6","position":"0006","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DIMKKA1","infoobject":"DIMKKA1","name":"BSV Lvl 1","descript":"BSV Lvl 1","position":"0007","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"0FISCPER","infoobject":"0FISCPER","name":"Fiscal year/period","descript":"Fiscal year/period","position":"0008","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DSBE","infoobject":"DSBE","name":"SBE","descript":"SBE","position":"0009","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DRU","infoobject":"DRU","name":"Reporting Unit","descript":"Reporting Unit","position":"0010","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DIMKKACG","infoobject":"DIMKKACG","name":"BSV CG","descript":"BSV CG","position":"0011","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DCTRY_FD","infoobject":"DCTRY_FD","name":"Country final-dest.","descript":"Country final-dest.","position":"0012","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"0INFOPROV","infoobject":"0INFOPROV","name":"InfoProvider","descript":"InfoProvider","position":"0013","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"DPC__DBG","infoobject":"DPC__DBG","name":"Business Group","descript":"Business Group","position":"0014","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"0CS_ITEM","infoobject":"0CS_ITEM","name":"Item","descript":"Item","position":"0015","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"0IOBJSV","infoobject":"0IOBJSV","name":"Object Type","descript":"Object Type","position":"0016","initialdisplay":"false","isstructure":"false","IS_FILTER":"false","laytp":"AGG","attribute":""},{"id":"00O2TK9973U0HI1AFYKGQIF4H","infoobject":"00O2TK9973U0HI1AFYKGQIF4H","name":"ROI: Deviations (Keep Sign)","descript":"ROI: Deviations (Keep Sign)","position":"0001","initialdisplay":"true","isstructure":"true","IS_FILTER":"false","laytp":"COL","attribute":""},{"id":"DRESPL2A","infoobject":"DRESPL2A","name":"Respo (Auth)","descript":"Respo (Auth)","position":"0001","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"DPRKNSTAA","infoobject":"DPRKNSTAA","name":"BayReP: Status(Auth)","descript":"BayReP: Status(Auth)","position":"0002","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"DCS_DTYPA","infoobject":"DCS_DTYPA","name":"Document Type (Auth)","descript":"Document Type (Auth)","position":"0003","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"0CS_DIMEN","infoobject":"0CS_DIMEN","name":"Dimension","descript":"Dimension","position":"0004","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"DBGA","infoobject":"DBGA","name":"BG (Auth)","descript":"BG (Auth)","position":"0005","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"DSGA","infoobject":"DSGA","name":"SG (Auth)","descript":"SG (Auth)","position":"0006","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"DCTRY_FDA","infoobject":"DCTRY_FDA","name":"Country final-dest.","descript":"Country final-dest.","position":"0007","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"0CS_CHART","infoobject":"0CS_CHART","name":"Cons Chart of Accts","descript":"Cons Chart of Accts","position":"0008","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"0FISCVARNT","infoobject":"0FISCVARNT","name":"Fiscal Year Variant","descript":"Fiscal Year Variant","position":"0009","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"0CURTYPE","infoobject":"0CURTYPE","name":"Currency Type","descript":"Currency Type","position":"0010","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"0VERSION","infoobject":"0VERSION","name":"Version","descript":"Version","position":"0011","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"0VALUATION","infoobject":"0VALUATION","name":"Valuation view","descript":"Valuation view","position":"0012","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"DRESPL1","infoobject":"DRESPL1","name":"Responsibility LVL1","descript":"Responsibility LVL1","position":"0013","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"DREQSTAT","infoobject":"DREQSTAT","name":"Status of Reporting","descript":"Status of Reporting","position":"0014","initialdisplay":"false","isstructure":"false","IS_FILTER":"true","laytp":"FIX","attribute":""},{"id":"00O2TK9973U0HI1AFYKGQK00H","infoobject":"00O2TK9973U0HI1AFYKGQK00H","name":"Income Statement (P&L) + CF","descript":"Income Statement (P&L) + CF","position":"0001","initialdisplay":"true","isstructure":"true","IS_FILTER":"false","laytp":"ROW","attribute":""}],"variables":[{"id":"D0FISCPER_CXSNI00","name":"Fiscal Period / Year","infoobject":{"id":"0FISCPER","name":"Fiscal year/period"},"type":"1","typetext":"Characteristic value","processtype":"3","processtypetext":"Customer exit","parsel":"P","parseltext":"Single value (parameters)","input":true,"mandatory":true,"entrytype":"2","entrytypetext":"Mandatory, Initial Value not Allowed","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"D0RTYPE_CXSNL01","name":"Dyn. Forecast Rate from D0VERSION_CXSMIFC","infoobject":{"id":"0RTYPE","name":"Exchange Rate Type"},"type":"1","typetext":"Characteristic value","processtype":"3","processtypetext":"Customer exit","parsel":"P","parseltext":"Single value (parameters)","input":false,"mandatory":true,"entrytype":"2","entrytypetext":"Mandatory, Initial Value not Allowed","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"D0VERSION_CXSMIFC2","name":"FC - Version","infoobject":{"id":"0VERSION","name":"Version"},"type":"1","typetext":"Characteristic value","processtype":"3","processtypetext":"Customer exit","parsel":"P","parseltext":"Single value (parameters)","input":true,"mandatory":true,"entrytype":"1","entrytypetext":"Mandatory Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DCOUNTRY_CDMOI01","name":"Country","infoobject":{"id":"DCTRY_FD","name":"Country final-dest."},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"M","parseltext":"Several Single Values","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DCURRENCY_CDSOI01","name":"Target Currency","infoobject":{"id":"0CURRENCY","name":"Currency"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"P","parseltext":"Single value (parameters)","input":true,"mandatory":true,"entrytype":"1","entrytypetext":"Mandatory Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"EUR","highvalue":""},{"id":"DDIMKKA1_CDOOI01","name":"BSV Lvl 1","infoobject":{"id":"DIMKKA1","name":"BSV Lvl 1"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDIMKKA2_CDOOI01","name":"BSV Lvl 2","infoobject":{"id":"DIMKKA2","name":"BSV Lvl 2"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDIMKKA3_CDOOI01","name":"BSV Lvl 3","infoobject":{"id":"DIMKKA3","name":"BSV Lvl 3"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDIMKKA4_CDOOI01","name":"BSV Lvl 4","infoobject":{"id":"DIMKKA4","name":"BSV Lvl 4"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDIMKKA5_CDOOI01","name":"BSV Lvl 5","infoobject":{"id":"DIMKKA5","name":"BSV Lvl 5"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDIMKKA6_CDOOI01","name":"BSV Lvl 6","infoobject":{"id":"DIMKKA6","name":"BSV Lvl 6"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDIMKKACG_CDOOI01","name":"BSV Country Group (Sel. opt.)","infoobject":{"id":"DIMKKACG","name":"BSV CG"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDIMKKAX_HDSOI02","name":"DIMKKAX HierNode selection","infoobject":{"id":"DIMKKAX","name":"BSV: Hierarchy"},"type":"2","typetext":"Hierarchy nodes","processtype":"5","processtypetext":"User entry / default value","parsel":"P","parseltext":"Single value (parameters)","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"WORLD","highvalue":"0HIER_NODE"},{"id":"DDRU_CDOOI01","name":"Reporting Unit","infoobject":{"id":"DRU","name":"Reporting Unit"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"DDSBE_CDOOISBE","name":"Strategic Business Entity","infoobject":{"id":"DSBE","name":"SBE"},"type":"1","typetext":"Characteristic value","processtype":"5","processtypetext":"User entry / default value","parsel":"S","parseltext":"Selection option","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"","highvalue":""},{"id":"Z0COND_FDSOI01","name":"Top N (= 10)","infoobject":{"id":"1FORMULA","name":"1FORMULA"},"type":"4","typetext":"Formula","processtype":"5","processtypetext":"User entry / default value","parsel":"P","parseltext":"Single value (parameters)","input":true,"mandatory":false,"entrytype":"0","entrytypetext":"Optional Variable Entry","dynchange":"","flags":{"lh":"0","r":"0"},"value":"10","highvalue":""}],"structures":[{"objects":[{"id":"00O2TK9973U0HI1AFYKGQILG1","name":"Fiscal Year/Period","mapname":"","position":"1","hidden":true,"parent":"","drillstate":"L","range":{"line":[{"object":"1KYFNM","sign":"I","opt":"EQ","keyLow":"1ROWCOUNT","keyHigh":"","dataTyp":"","dataLength":"0000"},{"object":"0FISCPER","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y25DEIHEMLCCIXY","keyHigh":"","dataTyp":"NUMC","dataLength":"0008"}]}},{"id":"00O2TK9973U0HI1AFYKGQIRRL","name":"01 ACT YTD","mapname":"","position":"2","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"1KYFNM","sign":"I","opt":"EQ","keyLow":"0AMOUNT","keyHigh":"","dataTyp":"CURR","dataLength":"0017"},{"object":"0VTYPE","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"0VTYPE","sign":"I","opt":"EQ","keyLow":"010","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"0FISCYEAR","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y3VPBFC9MWIWGYD","keyHigh":"","dataTyp":"NUMC","dataLength":"0004"},{"object":"0FISCPER3","sign":"I","opt":"LE","keyLow":"00O2TK8CN6Y3VPBF48P8C27QB","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"D_GCLCREP","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y2CFSEW539AZWEZ","keyHigh":"","dataTyp":"CHAR","dataLength":"0003"}]}},{"id":"00O2TK9973U0HI1AFYKGQIY35","name":"02 PY YTD","mapname":"","position":"3","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"1KYFNM","sign":"I","opt":"EQ","keyLow":"0AMOUNT","keyHigh":"","dataTyp":"CURR","dataLength":"0017"},{"object":"0VTYPE","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"0VTYPE","sign":"I","opt":"EQ","keyLow":"010","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"0FISCPER3","sign":"I","opt":"LE","keyLow":"00O2TK8CN6Y3VPBF48P8C27QB","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"D_GCLCREP","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y2CFSEW539AZWEZ","keyHigh":"","dataTyp":"CHAR","dataLength":"0003"},{"object":"0FISCYEAR","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y3VPBFC9MWIWGYD","keyHigh":"","dataTyp":"NUMC","dataLength":"0004"}]}},{"id":"00O2TK9973U0HI1AFYKGQJ4EP","name":"03 BUD YTD","mapname":"","position":"4","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"1KYFNM","sign":"I","opt":"EQ","keyLow":"0AMOUNT","keyHigh":"","dataTyp":"CURR","dataLength":"0017"},{"object":"0VTYPE","sign":"I","opt":"EQ","keyLow":"020","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"0FISCYEAR","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y3VPBFC9MWIWGYD","keyHigh":"","dataTyp":"NUMC","dataLength":"0004"},{"object":"0FISCPER3","sign":"I","opt":"LE","keyLow":"00O2TK8CN6Y3VPBF48P8C27QB","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"D_GCLCREP","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y2CFSEW539AZWEZ","keyHigh":"","dataTyp":"CHAR","dataLength":"0003"}]}},{"id":"00O2TK9973U2BMDGJ39R5AQ1C","name":"04 &D0VERSION_TEXT2& YTD","mapname":"","position":"5","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"1KYFNM","sign":"I","opt":"EQ","keyLow":"0AMOUNT","keyHigh":"","dataTyp":"CURR","dataLength":"0017"},{"object":"0FISCYEAR","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y3VPBFC9MWIWGYD","keyHigh":"","dataTyp":"NUMC","dataLength":"0004"},{"object":"0FISCPER3","sign":"I","opt":"LE","keyLow":"00O2TK8CN6Y3VPBF48P8C27QB","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"D_GCLCREP","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y2CFSEW539AZWEZ","keyHigh":"","dataTyp":"CHAR","dataLength":"0003"},{"object":"0VTYPE","sign":"I","opt":"EQ","keyLow":"060","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"0VERSION","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y46SCVJFKQAOHZ0","keyHigh":"","dataTyp":"CHAR","dataLength":"0003"}]}},{"id":"00O2TK9973U2BMDGJ39R5AWCW","name":"04.1 FY &D0VERSION_TEXT2&","mapname":"","position":"6","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"1KYFNM","sign":"I","opt":"EQ","keyLow":"0AMOUNT","keyHigh":"","dataTyp":"CURR","dataLength":"0017"},{"object":"0FISCYEAR","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y3VPBFC9MWIWGYD","keyHigh":"","dataTyp":"NUMC","dataLength":"0004"},{"object":"D_GCLCREP","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y2CFSEW539AZWEZ","keyHigh":"","dataTyp":"CHAR","dataLength":"0003"},{"object":"0VTYPE","sign":"I","opt":"EQ","keyLow":"060","keyHigh":"","dataTyp":"NUMC","dataLength":"0003"},{"object":"0VERSION","sign":"I","opt":"EQ","keyLow":"00O2TK8CN6Y46SCVJFKQAOHZ0","keyHigh":"","dataTyp":"CHAR","dataLength":"0003"}]}},{"id":"00O2TK9973U0HI1AFYKGQJAQ9","name":"1.1 ∆ PY","mapname":"","position":"7","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U0HI1AFYKGQJH1T","name":"1.2 ∆ PY %","mapname":"","position":"8","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U0HI1AFYKGQJNDD","name":"2.1 ∆ BUD","mapname":"","position":"9","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U0HI1AFYKGQJTOX","name":"2.2 ∆ BUD %","mapname":"","position":"10","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U2BMDGJ39R5B2OG","name":"4.1 TOGO &D0VERSION_TEXT2&","mapname":"","position":"11","hidden":false,"parent":"","drillstate":"L","range":""}],"id":"00O2TK9973U0HI1AFYKGQIF4H","name":"ROI: Deviations (Keep Sign)","mapname":"","position":"1"},{"objects":[{"id":"00O2TK9973U0HI1AFYKGQLXJL","name":"Consolidated Country Profit","mapname":"","position":"1","hidden":false,"parent":"","drillstate":"E","range":""},{"id":"00O2TK9973U0HI1AFYKGQK6C1","name":"Gross Sales","mapname":"","position":"2","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"L","range":{"line":[{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"0PSG","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD1","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD2","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0030020150","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0030020110","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQKCNL","name":"Disc., Rebates, Cash-Disc.","mapname":"","position":"3","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"L","range":{"line":[{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"0PSG","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD1","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD2","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0030040100","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQKIZ5","name":"Net Sales","mapname":"","position":"4","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"L","range":{"line":[{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"0PSG","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD1","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD2","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0030020100","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0030020200","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQKPAP","name":"Sales adjustments","mapname":"","position":"5","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"L","range":{"line":[{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"0PSG","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD1","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD2","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033500000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQKVM9","name":"Total COGS","mapname":"","position":"6","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"E","range":""},{"id":"00O2TK9973U0HI1AFYKGQL1XT","name":"COGS IIa","mapname":"","position":"7","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQKVM9","drillstate":"L","range":{"line":[{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_DOCTYPE","sign":"I","opt":"EQ","keyLow":"Y1","keyHigh":"","dataTyp":"CHAR","dataLength":"0002"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"0PSG","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_DOCTYPE","sign":"I","opt":"EQ","keyLow":"Y4","keyHigh":"","dataTyp":"CHAR","dataLength":"0002"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD1","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_DOCTYPE","sign":"I","opt":"EQ","keyLow":"YD","keyHigh":"","dataTyp":"CHAR","dataLength":"0002"},{"object":"0CS_DOCTYPE","sign":"I","opt":"EQ","keyLow":"YH","keyHigh":"","dataTyp":"CHAR","dataLength":"0002"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD2","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032220000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032211000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032212000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQL89D","name":"SPC + MOH","mapname":"","position":"8","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQKVM9","drillstate":"L","range":{"line":[{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"0PSG","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD1","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD2","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032232000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032236500","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032238000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032222050","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032235500","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032233500","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0032230009","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQLEKX","name":"Gross Profit","mapname":"","position":"9","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"L","range":""},{"id":"00O2TK9973U0HI1AFYKGQLKWH","name":"OPEX","mapname":"","position":"10","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"L","range":{"line":[{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"0PSG","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD1","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"E","opt":"EQ","keyLow":"BKA_CPKD2","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033111000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033115000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033112000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033113000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033116900","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033152000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033116500","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0035101800","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0035103000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0034104000","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033114000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0033116000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0035101000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0034101000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0036210000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0036110000","keyHigh":"0CS_ITEM","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQLR81","name":"cEBIT","mapname":"","position":"11","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQLXJL","drillstate":"L","range":""},{"id":"00O2TK9973U282QAXJX1BM27Y","name":"∆ Trade Accounts Receivable","mapname":"","position":"12","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U282QAXJX1BG3B2","name":"Additions - Trade Accts. Rec.","mapname":"","position":"13","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"DXRAGL","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0001"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"BKA_CPKD7","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"COPADPF","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152010","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282QAXJX1BM8JI","name":"Clearings - Trade Accts. Rec.","mapname":"","position":"14","hidden":false,"parent":"","drillstate":"E","range":""},{"id":"00O2TK9973U282QAXJX1BFWZI","name":"Closed Trade Accounts Receivable","mapname":"","position":"15","hidden":true,"parent":"00O2TK9973U282QAXJX1BM8JI","drillstate":"L","range":{"line":[{"object":"DXRAGL","sign":"I","opt":"EQ","keyLow":"X","keyHigh":"","dataTyp":"CHAR","dataLength":"0001"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"BKA_CPKD7","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"COPADPF","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152010","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282QAXJX1BMXTQ","name":"∆ Refund Liabilities","mapname":"","position":"16","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U0HI1AFYKGQMT5D","name":"Additions - Refund Liabilities","mapname":"","position":"17","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"DXRAGL","sign":"I","opt":"EQ","keyLow":"#","keyHigh":"","dataTyp":"CHAR","dataLength":"0001"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"BKA_CPKD7","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"COPADPF","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0IOBJSV","sign":"E","opt":"EQ","keyLow":"FITL","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"0051152050","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152035","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282QAXJX1BN45A","name":"Clearings - Refund Liabilities","mapname":"","position":"18","hidden":false,"parent":"","drillstate":"E","range":""},{"id":"00O2TK9973U282QAXJX1BG9MM","name":"Closed Trade Related Provisions","mapname":"","position":"19","hidden":true,"parent":"00O2TK9973U282QAXJX1BN45A","drillstate":"L","range":{"line":[{"object":"DXRAGL","sign":"I","opt":"EQ","keyLow":"X","keyHigh":"","dataTyp":"CHAR","dataLength":"0001"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"BKA_CPKD7","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"COPADPF","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"0051152050","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152035","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282QAXJX1BNTFI","name":"∆ Inventory","mapname":"","position":"20","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"BKA_CPKD7","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"COPADPF","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF02","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152020","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQN5SH","name":"Country Cash Flow (nom.)","mapname":"","position":"21","hidden":false,"parent":"","drillstate":"E","range":""},{"id":"00O2TK9973U0HI1AFYKGQM3V5","name":"∆ Trade Account receivable","mapname":"","position":"22","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQN5SH","drillstate":"L","range":{"line":[{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"BKA_CPKD7","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"COPADPF","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0IOBJSV","sign":"E","opt":"EQ","keyLow":"FITL","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152010","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U0HI1AFYKGQMMTT","name":"∆ Trade Related Provisions","mapname":"","position":"23","hidden":true,"parent":"00O2TK9973U0HI1AFYKGQN5SH","drillstate":"L","range":{"line":[{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"BKA_CPKD7","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"COPADPF","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0IOBJSV","sign":"E","opt":"EQ","keyLow":"FITL","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152035","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282QAXJX1BOIPQ","name":"TL","mapname":"","position":"24","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U282QB3ZT3X8WQ0","name":"TL RP","mapname":"","position":"25","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"FITL","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"0051152050","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152035","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282QB3ZT3X8DRC","name":"TL AR","mapname":"","position":"26","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"FITL","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152010","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282S61AGZ0BPDD","name":"TA","mapname":"","position":"27","hidden":false,"parent":"","drillstate":"L","range":""},{"id":"00O2TK9973U282S61AGZ0BVOX","name":"TA RP","mapname":"","position":"28","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"FITA","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"0051152050","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152035","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282S61AGZ0C20H","name":"TA AR","mapname":"","position":"29","hidden":false,"parent":"","drillstate":"L","range":{"line":[{"object":"DRESPL1","sign":"I","opt":"EQ","keyLow":"000000000000000010","keyHigh":"","dataTyp":"CHAR","dataLength":"0012"},{"object":"0INFOPROV","sign":"I","opt":"EQ","keyLow":"FIGLCCF01","keyHigh":"","dataTyp":"CHAR","dataLength":"001E"},{"object":"0IOBJSV","sign":"I","opt":"EQ","keyLow":"FITA","keyHigh":"","dataTyp":"CHAR","dataLength":"0004"},{"object":"0CS_ITEM","sign":"I","opt":"EQ","keyLow":"BI0051152010","keyHigh":"","dataTyp":"CHAR","dataLength":"000A"}]}},{"id":"00O2TK9973U282QAXJX1BP1OE","name":"Country Cash Flow","mapname":"","position":"30","hidden":false,"parent":"","drillstate":"L","range":""}],"id":"00O2TK9973U0HI1AFYKGQK00H","name":"Income Statement (P&L) + CF","mapname":"","position":"1"}]}
+{
+	"version": "",
+	"title": "ROI : Cash Flow Deviation",
+	"id": "SOA00_COPAPRPCF_QS022",
+	"infocube": "COPAPRPCF",
+	"creator": "BEMDX",
+	"creationDate": "2018-05-29",
+	"creationTime": "14:29:35",
+	"lastChanger": "WDELL",
+	"changeDate": "2018-05-29",
+	"changeTime": "14:29:35",
+	"lastQueryExecutionDate": "2018-07-10",
+	"lastQueryExecutionTime": "11:03:58",
+	"available": true,
+	"infoobjects": [
+		{
+			"id": "DIMKKAX",
+			"infoobject": "DIMKKAX",
+			"name": "BSV: Hierarchy",
+			"descript": "BSV: Hierarchy",
+			"position": "0001",
+			"initialdisplay": "false",
+			"ishierarchy": "true",
+			"hierarchy": {
+				"id": "BSV_HIER_ALL",
+				"name": "",
+				"level": "12"
+			},
+			"hienmdesc": "",
+			"hienmlevel": "12",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DIMKKA3",
+			"infoobject": "DIMKKA3",
+			"name": "BSV Lvl 3",
+			"descript": "BSV Lvl 3",
+			"position": "0002",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DIMKKA4",
+			"infoobject": "DIMKKA4",
+			"name": "BSV Lvl 4",
+			"descript": "BSV Lvl 4",
+			"position": "0003",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DIMKKA2",
+			"infoobject": "DIMKKA2",
+			"name": "BSV Lvl 2",
+			"descript": "BSV Lvl 2",
+			"position": "0004",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DIMKKA5",
+			"infoobject": "DIMKKA5",
+			"name": "BSV Lvl 5",
+			"descript": "BSV Lvl 5",
+			"position": "0005",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DIMKKA6",
+			"infoobject": "DIMKKA6",
+			"name": "BSV Lvl 6",
+			"descript": "BSV Lvl 6",
+			"position": "0006",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DIMKKA1",
+			"infoobject": "DIMKKA1",
+			"name": "BSV Lvl 1",
+			"descript": "BSV Lvl 1",
+			"position": "0007",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "0FISCPER",
+			"infoobject": "0FISCPER",
+			"name": "Fiscal year/period",
+			"descript": "Fiscal year/period",
+			"position": "0008",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DSBE",
+			"infoobject": "DSBE",
+			"name": "SBE",
+			"descript": "SBE",
+			"position": "0009",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DRU",
+			"infoobject": "DRU",
+			"name": "Reporting Unit",
+			"descript": "Reporting Unit",
+			"position": "0010",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DIMKKACG",
+			"infoobject": "DIMKKACG",
+			"name": "BSV CG",
+			"descript": "BSV CG",
+			"position": "0011",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DCTRY_FD",
+			"infoobject": "DCTRY_FD",
+			"name": "Country final-dest.",
+			"descript": "Country final-dest.",
+			"position": "0012",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "0INFOPROV",
+			"infoobject": "0INFOPROV",
+			"name": "InfoProvider",
+			"descript": "InfoProvider",
+			"position": "0013",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "DPC__DBG",
+			"infoobject": "DPC__DBG",
+			"name": "Business Group",
+			"descript": "Business Group",
+			"position": "0014",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "0CS_ITEM",
+			"infoobject": "0CS_ITEM",
+			"name": "Item",
+			"descript": "Item",
+			"position": "0015",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "0IOBJSV",
+			"infoobject": "0IOBJSV",
+			"name": "Object Type",
+			"descript": "Object Type",
+			"position": "0016",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "false",
+			"laytp": "AGG",
+			"attribute": ""
+		},
+		{
+			"id": "00O2TK9973U0HI1AFYKGQIF4H",
+			"infoobject": "00O2TK9973U0HI1AFYKGQIF4H",
+			"name": "ROI: Deviations (Keep Sign)",
+			"descript": "ROI: Deviations (Keep Sign)",
+			"position": "0001",
+			"initialdisplay": "true",
+			"isstructure": "true",
+			"IS_FILTER": "false",
+			"laytp": "COL",
+			"attribute": ""
+		},
+		{
+			"id": "DRESPL2A",
+			"infoobject": "DRESPL2A",
+			"name": "Respo (Auth)",
+			"descript": "Respo (Auth)",
+			"position": "0001",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "DPRKNSTAA",
+			"infoobject": "DPRKNSTAA",
+			"name": "BayReP: Status(Auth)",
+			"descript": "BayReP: Status(Auth)",
+			"position": "0002",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "DCS_DTYPA",
+			"infoobject": "DCS_DTYPA",
+			"name": "Document Type (Auth)",
+			"descript": "Document Type (Auth)",
+			"position": "0003",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "0CS_DIMEN",
+			"infoobject": "0CS_DIMEN",
+			"name": "Dimension",
+			"descript": "Dimension",
+			"position": "0004",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "DBGA",
+			"infoobject": "DBGA",
+			"name": "BG (Auth)",
+			"descript": "BG (Auth)",
+			"position": "0005",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "DSGA",
+			"infoobject": "DSGA",
+			"name": "SG (Auth)",
+			"descript": "SG (Auth)",
+			"position": "0006",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "DCTRY_FDA",
+			"infoobject": "DCTRY_FDA",
+			"name": "Country final-dest.",
+			"descript": "Country final-dest.",
+			"position": "0007",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "0CS_CHART",
+			"infoobject": "0CS_CHART",
+			"name": "Cons Chart of Accts",
+			"descript": "Cons Chart of Accts",
+			"position": "0008",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "0FISCVARNT",
+			"infoobject": "0FISCVARNT",
+			"name": "Fiscal Year Variant",
+			"descript": "Fiscal Year Variant",
+			"position": "0009",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "0CURTYPE",
+			"infoobject": "0CURTYPE",
+			"name": "Currency Type",
+			"descript": "Currency Type",
+			"position": "0010",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "0VERSION",
+			"infoobject": "0VERSION",
+			"name": "Version",
+			"descript": "Version",
+			"position": "0011",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "0VALUATION",
+			"infoobject": "0VALUATION",
+			"name": "Valuation view",
+			"descript": "Valuation view",
+			"position": "0012",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "DRESPL1",
+			"infoobject": "DRESPL1",
+			"name": "Responsibility LVL1",
+			"descript": "Responsibility LVL1",
+			"position": "0013",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "DREQSTAT",
+			"infoobject": "DREQSTAT",
+			"name": "Status of Reporting",
+			"descript": "Status of Reporting",
+			"position": "0014",
+			"initialdisplay": "false",
+			"isstructure": "false",
+			"IS_FILTER": "true",
+			"laytp": "FIX",
+			"attribute": ""
+		},
+		{
+			"id": "00O2TK9973U0HI1AFYKGQK00H",
+			"infoobject": "00O2TK9973U0HI1AFYKGQK00H",
+			"name": "Income Statement (P&L) + CF",
+			"descript": "Income Statement (P&L) + CF",
+			"position": "0001",
+			"initialdisplay": "true",
+			"isstructure": "true",
+			"IS_FILTER": "false",
+			"laytp": "ROW",
+			"attribute": ""
+		}
+	],
+	"variables": [
+		{
+			"id": "D0FISCPER_CXSNI00",
+			"name": "Fiscal Period / Year",
+			"infoobject": {
+				"id": "0FISCPER",
+				"name": "Fiscal year/period"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "3",
+			"processtypetext": "Customer exit",
+			"parsel": "P",
+			"parseltext": "Single value (parameters)",
+			"input": true,
+			"mandatory": true,
+			"entrytype": "2",
+			"entrytypetext": "Mandatory, Initial Value not Allowed",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "D0RTYPE_CXSNL01",
+			"name": "Dyn. Forecast Rate from D0VERSION_CXSMIFC",
+			"infoobject": {
+				"id": "0RTYPE",
+				"name": "Exchange Rate Type"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "3",
+			"processtypetext": "Customer exit",
+			"parsel": "P",
+			"parseltext": "Single value (parameters)",
+			"input": false,
+			"mandatory": true,
+			"entrytype": "2",
+			"entrytypetext": "Mandatory, Initial Value not Allowed",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "D0VERSION_CXSMIFC2",
+			"name": "FC - Version",
+			"infoobject": {
+				"id": "0VERSION",
+				"name": "Version"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "3",
+			"processtypetext": "Customer exit",
+			"parsel": "P",
+			"parseltext": "Single value (parameters)",
+			"input": true,
+			"mandatory": true,
+			"entrytype": "1",
+			"entrytypetext": "Mandatory Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DCOUNTRY_CDMOI01",
+			"name": "Country",
+			"infoobject": {
+				"id": "DCTRY_FD",
+				"name": "Country final-dest."
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "M",
+			"parseltext": "Several Single Values",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DCURRENCY_CDSOI01",
+			"name": "Target Currency",
+			"infoobject": {
+				"id": "0CURRENCY",
+				"name": "Currency"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "P",
+			"parseltext": "Single value (parameters)",
+			"input": true,
+			"mandatory": true,
+			"entrytype": "1",
+			"entrytypetext": "Mandatory Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "EUR",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKA1_CDOOI01",
+			"name": "BSV Lvl 1",
+			"infoobject": {
+				"id": "DIMKKA1",
+				"name": "BSV Lvl 1"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKA2_CDOOI01",
+			"name": "BSV Lvl 2",
+			"infoobject": {
+				"id": "DIMKKA2",
+				"name": "BSV Lvl 2"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKA3_CDOOI01",
+			"name": "BSV Lvl 3",
+			"infoobject": {
+				"id": "DIMKKA3",
+				"name": "BSV Lvl 3"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKA4_CDOOI01",
+			"name": "BSV Lvl 4",
+			"infoobject": {
+				"id": "DIMKKA4",
+				"name": "BSV Lvl 4"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKA5_CDOOI01",
+			"name": "BSV Lvl 5",
+			"infoobject": {
+				"id": "DIMKKA5",
+				"name": "BSV Lvl 5"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKA6_CDOOI01",
+			"name": "BSV Lvl 6",
+			"infoobject": {
+				"id": "DIMKKA6",
+				"name": "BSV Lvl 6"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKACG_CDOOI01",
+			"name": "BSV Country Group (Sel. opt.)",
+			"infoobject": {
+				"id": "DIMKKACG",
+				"name": "BSV CG"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDIMKKAX_HDSOI02",
+			"name": "DIMKKAX HierNode selection",
+			"infoobject": {
+				"id": "DIMKKAX",
+				"name": "BSV: Hierarchy"
+			},
+			"type": "2",
+			"typetext": "Hierarchy nodes",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "P",
+			"parseltext": "Single value (parameters)",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "WORLD",
+			"highvalue": "0HIER_NODE"
+		},
+		{
+			"id": "DDRU_CDOOI01",
+			"name": "Reporting Unit",
+			"infoobject": {
+				"id": "DRU",
+				"name": "Reporting Unit"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "DDSBE_CDOOISBE",
+			"name": "Strategic Business Entity",
+			"infoobject": {
+				"id": "DSBE",
+				"name": "SBE"
+			},
+			"type": "1",
+			"typetext": "Characteristic value",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "S",
+			"parseltext": "Selection option",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "",
+			"highvalue": ""
+		},
+		{
+			"id": "Z0COND_FDSOI01",
+			"name": "Top N (= 10)",
+			"infoobject": {
+				"id": "1FORMULA",
+				"name": "1FORMULA"
+			},
+			"type": "4",
+			"typetext": "Formula",
+			"processtype": "5",
+			"processtypetext": "User entry / default value",
+			"parsel": "P",
+			"parseltext": "Single value (parameters)",
+			"input": true,
+			"mandatory": false,
+			"entrytype": "0",
+			"entrytypetext": "Optional Variable Entry",
+			"dynchange": "",
+			"flags": {
+				"lh": "0",
+				"r": "0"
+			},
+			"value": "10",
+			"highvalue": ""
+		}
+	],
+	"structures": [
+		{
+			"objects": [
+				{
+					"id": "00O2TK9973U0HI1AFYKGQILG1",
+					"name": "Fiscal Year/Period",
+					"mapname": "",
+					"position": "1",
+					"hidden": true,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "1KYFNM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "1ROWCOUNT",
+								"keyHigh": "",
+								"dataTyp": "",
+								"dataLength": "0000"
+							},
+							{
+								"object": "0FISCPER",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y25DEIHEMLCCIXY",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0008"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQIRRL",
+					"name": "01 ACT YTD",
+					"mapname": "",
+					"position": "2",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "1KYFNM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0AMOUNT",
+								"keyHigh": "",
+								"dataTyp": "CURR",
+								"dataLength": "0017"
+							},
+							{
+								"object": "0VTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0VTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "010",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0FISCYEAR",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y3VPBFC9MWIWGYD",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0FISCPER3",
+								"sign": "I",
+								"opt": "LE",
+								"keyLow": "00O2TK8CN6Y3VPBF48P8C27QB",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "D_GCLCREP",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y2CFSEW539AZWEZ",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0003"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQIY35",
+					"name": "02 PY YTD",
+					"mapname": "",
+					"position": "3",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "1KYFNM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0AMOUNT",
+								"keyHigh": "",
+								"dataTyp": "CURR",
+								"dataLength": "0017"
+							},
+							{
+								"object": "0VTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0VTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "010",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0FISCPER3",
+								"sign": "I",
+								"opt": "LE",
+								"keyLow": "00O2TK8CN6Y3VPBF48P8C27QB",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "D_GCLCREP",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y2CFSEW539AZWEZ",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0FISCYEAR",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y3VPBFC9MWIWGYD",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0004"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQJ4EP",
+					"name": "03 BUD YTD",
+					"mapname": "",
+					"position": "4",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "1KYFNM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0AMOUNT",
+								"keyHigh": "",
+								"dataTyp": "CURR",
+								"dataLength": "0017"
+							},
+							{
+								"object": "0VTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "020",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0FISCYEAR",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y3VPBFC9MWIWGYD",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0FISCPER3",
+								"sign": "I",
+								"opt": "LE",
+								"keyLow": "00O2TK8CN6Y3VPBF48P8C27QB",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "D_GCLCREP",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y2CFSEW539AZWEZ",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0003"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U2BMDGJ39R5AQ1C",
+					"name": "04 &D0VERSION_TEXT2& YTD",
+					"mapname": "",
+					"position": "5",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "1KYFNM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0AMOUNT",
+								"keyHigh": "",
+								"dataTyp": "CURR",
+								"dataLength": "0017"
+							},
+							{
+								"object": "0FISCYEAR",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y3VPBFC9MWIWGYD",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0FISCPER3",
+								"sign": "I",
+								"opt": "LE",
+								"keyLow": "00O2TK8CN6Y3VPBF48P8C27QB",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "D_GCLCREP",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y2CFSEW539AZWEZ",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0VTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "060",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0VERSION",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y46SCVJFKQAOHZ0",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0003"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U2BMDGJ39R5AWCW",
+					"name": "04.1 FY &D0VERSION_TEXT2&",
+					"mapname": "",
+					"position": "6",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "1KYFNM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0AMOUNT",
+								"keyHigh": "",
+								"dataTyp": "CURR",
+								"dataLength": "0017"
+							},
+							{
+								"object": "0FISCYEAR",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y3VPBFC9MWIWGYD",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0004"
+							},
+							{
+								"object": "D_GCLCREP",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y2CFSEW539AZWEZ",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0VTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "060",
+								"keyHigh": "",
+								"dataTyp": "NUMC",
+								"dataLength": "0003"
+							},
+							{
+								"object": "0VERSION",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "00O2TK8CN6Y46SCVJFKQAOHZ0",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0003"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQJAQ9",
+					"name": "1.1 ∆ PY",
+					"mapname": "",
+					"position": "7",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQJH1T",
+					"name": "1.2 ∆ PY %",
+					"mapname": "",
+					"position": "8",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQJNDD",
+					"name": "2.1 ∆ BUD",
+					"mapname": "",
+					"position": "9",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQJTOX",
+					"name": "2.2 ∆ BUD %",
+					"mapname": "",
+					"position": "10",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U2BMDGJ39R5B2OG",
+					"name": "4.1 TOGO &D0VERSION_TEXT2&",
+					"mapname": "",
+					"position": "11",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				}
+			],
+			"id": "00O2TK9973U0HI1AFYKGQIF4H",
+			"name": "ROI: Deviations (Keep Sign)",
+			"mapname": "",
+			"position": "1"
+		},
+		{
+			"objects": [
+				{
+					"id": "00O2TK9973U0HI1AFYKGQLXJL",
+					"name": "Consolidated Country Profit",
+					"mapname": "",
+					"position": "1",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "E",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQK6C1",
+					"name": "Gross Sales",
+					"mapname": "",
+					"position": "2",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0PSG",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD2",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0030020150",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0030020110",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQKCNL",
+					"name": "Disc., Rebates, Cash-Disc.",
+					"mapname": "",
+					"position": "3",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0PSG",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD2",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0030040100",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQKIZ5",
+					"name": "Net Sales",
+					"mapname": "",
+					"position": "4",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0PSG",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD2",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0030020100",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0030020200",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQKPAP",
+					"name": "Sales adjustments",
+					"mapname": "",
+					"position": "5",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0PSG",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD2",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033500000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQKVM9",
+					"name": "Total COGS",
+					"mapname": "",
+					"position": "6",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "E",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQL1XT",
+					"name": "COGS IIa",
+					"mapname": "",
+					"position": "7",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQKVM9",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_DOCTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "Y1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0002"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0PSG",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_DOCTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "Y4",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0002"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_DOCTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "YD",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0002"
+							},
+							{
+								"object": "0CS_DOCTYPE",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "YH",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0002"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD2",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032220000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032211000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032212000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQL89D",
+					"name": "SPC + MOH",
+					"mapname": "",
+					"position": "8",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQKVM9",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0PSG",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD2",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032232000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032236500",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032238000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032222050",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032235500",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032233500",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0032230009",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQLEKX",
+					"name": "Gross Profit",
+					"mapname": "",
+					"position": "9",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQLKWH",
+					"name": "OPEX",
+					"mapname": "",
+					"position": "10",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0PSG",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD1",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD2",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033111000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033115000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033112000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033113000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033116900",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033152000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033116500",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0035101800",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0035103000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0034104000",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033114000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0033116000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0035101000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0034101000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0036210000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0036110000",
+								"keyHigh": "0CS_ITEM",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQLR81",
+					"name": "cEBIT",
+					"mapname": "",
+					"position": "11",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQLXJL",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BM27Y",
+					"name": "∆ Trade Accounts Receivable",
+					"mapname": "",
+					"position": "12",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BG3B2",
+					"name": "Additions - Trade Accts. Rec.",
+					"mapname": "",
+					"position": "13",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DXRAGL",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0001"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD7",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "COPADPF",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BM8JI",
+					"name": "Clearings - Trade Accts. Rec.",
+					"mapname": "",
+					"position": "14",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "E",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BFWZI",
+					"name": "Closed Trade Accounts Receivable",
+					"mapname": "",
+					"position": "15",
+					"hidden": true,
+					"parent": "00O2TK9973U282QAXJX1BM8JI",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DXRAGL",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "X",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0001"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD7",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "COPADPF",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BMXTQ",
+					"name": "∆ Refund Liabilities",
+					"mapname": "",
+					"position": "16",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQMT5D",
+					"name": "Additions - Refund Liabilities",
+					"mapname": "",
+					"position": "17",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DXRAGL",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "#",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0001"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD7",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "COPADPF",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "FITL",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0051152050",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152035",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BN45A",
+					"name": "Clearings - Refund Liabilities",
+					"mapname": "",
+					"position": "18",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "E",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BG9MM",
+					"name": "Closed Trade Related Provisions",
+					"mapname": "",
+					"position": "19",
+					"hidden": true,
+					"parent": "00O2TK9973U282QAXJX1BN45A",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DXRAGL",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "X",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0001"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD7",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "COPADPF",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0051152050",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152035",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BNTFI",
+					"name": "∆ Inventory",
+					"mapname": "",
+					"position": "20",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD7",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "COPADPF",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF02",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152020",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQN5SH",
+					"name": "Country Cash Flow (nom.)",
+					"mapname": "",
+					"position": "21",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "E",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQM3V5",
+					"name": "∆ Trade Account receivable",
+					"mapname": "",
+					"position": "22",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQN5SH",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD7",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "COPADPF",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "FITL",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U0HI1AFYKGQMMTT",
+					"name": "∆ Trade Related Provisions",
+					"mapname": "",
+					"position": "23",
+					"hidden": true,
+					"parent": "00O2TK9973U0HI1AFYKGQN5SH",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BKA_CPKD7",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "COPADPF",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "E",
+								"opt": "EQ",
+								"keyLow": "FITL",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152035",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BOIPQ",
+					"name": "TL",
+					"mapname": "",
+					"position": "24",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U282QB3ZT3X8WQ0",
+					"name": "TL RP",
+					"mapname": "",
+					"position": "25",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FITL",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0051152050",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152035",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282QB3ZT3X8DRC",
+					"name": "TL AR",
+					"mapname": "",
+					"position": "26",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FITL",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282S61AGZ0BPDD",
+					"name": "TA",
+					"mapname": "",
+					"position": "27",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				},
+				{
+					"id": "00O2TK9973U282S61AGZ0BVOX",
+					"name": "TA RP",
+					"mapname": "",
+					"position": "28",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FITA",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "0051152050",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152035",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282S61AGZ0C20H",
+					"name": "TA AR",
+					"mapname": "",
+					"position": "29",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": {
+						"line": [
+							{
+								"object": "DRESPL1",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "000000000000000010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0012"
+							},
+							{
+								"object": "0INFOPROV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FIGLCCF01",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "001E"
+							},
+							{
+								"object": "0IOBJSV",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "FITA",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "0004"
+							},
+							{
+								"object": "0CS_ITEM",
+								"sign": "I",
+								"opt": "EQ",
+								"keyLow": "BI0051152010",
+								"keyHigh": "",
+								"dataTyp": "CHAR",
+								"dataLength": "000A"
+							}
+						]
+					}
+				},
+				{
+					"id": "00O2TK9973U282QAXJX1BP1OE",
+					"name": "Country Cash Flow",
+					"mapname": "",
+					"position": "30",
+					"hidden": false,
+					"parent": "",
+					"drillstate": "L",
+					"range": ""
+				}
+			],
+			"id": "00O2TK9973U0HI1AFYKGQK00H",
+			"name": "Income Statement (P&L) + CF",
+			"mapname": "",
+			"position": "1"
+		}
+	]
+}

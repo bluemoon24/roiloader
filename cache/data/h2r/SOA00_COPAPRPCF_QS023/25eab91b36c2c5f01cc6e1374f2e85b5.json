@@ -1,1 +1,741 @@
-{"query":{"title":"SOA00_COPAPRPCF_QS023","limitexceeded":false,"nosuchuser":false,"nodata":false,"nosuchquery":false,"noauth":false},"meta":{"char001":{"key":"00O2TK9973U0HI1AUMNJAGS9U","value":"ROI: Deviations (Keep Sign)"},"kf001":{"key":"00O2TK9973U0HI1AUMNJAQFXE","value":"\nJan"},"kf002":{"key":"00O2TK9973U0HI1AUMNJAQM8Y","value":"\nFeb"},"kf003":{"key":"00O2TK9973U0HI1AUMNJAQYW2","value":"\nMar"},"kf004":{"key":"00O2TK9973U0HI1AUMNJARBJ6","value":"\nApr"},"kf005":{"key":"00O2TK9973U0HI1AUMNJARO6A","value":"\nMay"},"kf006":{"key":"00O2TK9973U0HI1AUMNJAS0TE","value":"\nJun"},"kf007":{"key":"00O2TK9973U0HI1AUMNJASDGI","value":"\nJul"},"kf008":{"key":"00O2TK9973U0HI1AUMNJASQ3M","value":"\nAug"},"kf009":{"key":"00O2TK9973U0HI1AUMNJAT2QQ","value":"\nSep"},"kf010":{"key":"00O2TK9973U0HI1AUMNJATFDU","value":"\nOct"},"kf011":{"key":"00O2TK9973U0HI1AUMNJATS0Y","value":"\nNov"},"kf012":{"key":"00O2TK9973U0HI1AUMNJAU4O2","value":"\nDec"}},"cube":[{"char001":{"key":"00O2TK9973U0HI1AUMNJAH4WY","value":"1.1 CY Country Cash Flow"},"kf001":{"key":"00O2TK9973U0HI1AUMNJAQFXE","value":"1141481952.36356873000","unit":"EUR"},"kf002":{"key":"00O2TK9973U0HI1AUMNJAQM8Y","value":"1732374328.84613156000","unit":"EUR"},"kf003":{"key":"00O2TK9973U0HI1AUMNJAQYW2","value":"2521384639.84066506000","unit":"EUR"},"kf004":{"key":"00O2TK9973U0HI1AUMNJARBJ6","value":"3740953157.59005670400","unit":"EUR"},"kf005":{"key":"00O2TK9973U0HI1AUMNJARO6A","value":"5441271208.49804682400","unit":"EUR"},"kf006":{"key":"00O2TK9973U0HI1AUMNJAS0TE","value":"7354762806.70838988600","unit":"EUR"},"kf007":{"key":"00O2TK9973U0HI1AUMNJASDGI","value":"8695625642.12328868600","unit":"EUR"},"kf008":{"key":"00O2TK9973U0HI1AUMNJASQ3M","value":"10156488792.7033857960","unit":"EUR"},"kf009":{"key":"00O2TK9973U0HI1AUMNJAT2QQ","value":"11804357848.7475168320","unit":"EUR"},"kf010":{"key":"00O2TK9973U0HI1AUMNJATFDU","value":"13152964840.3467209460","unit":"EUR"},"kf011":{"key":"00O2TK9973U0HI1AUMNJATS0Y","value":"13980867571.4369484100","unit":"EUR"},"kf012":{"key":"00O2TK9973U0HI1AUMNJAU4O2","value":"16082703894.9260354200","unit":"EUR"}},{"char001":{"key":"00O2TK9973U0HI1AUMNJALIXU","value":"2.1 PY Country Cash Flow"},"kf001":{"key":"00O2TK9973U0HI1AUMNJAQFXE","value":"670100767.034770257000","unit":"EUR"},"kf002":{"key":"00O2TK9973U0HI1AUMNJAQM8Y","value":"1227936426.87527006200","unit":"EUR"},"kf003":{"key":"00O2TK9973U0HI1AUMNJAQYW2","value":"1916253046.34854878600","unit":"EUR"},"kf004":{"key":"00O2TK9973U0HI1AUMNJARBJ6","value":"3013065725.22920065600","unit":"EUR"},"kf005":{"key":"00O2TK9973U0HI1AUMNJARO6A","value":"4457713709.59813176100","unit":"EUR"},"kf006":{"key":"00O2TK9973U0HI1AUMNJAS0TE","value":"6551416263.59237819000","unit":"EUR"},"kf007":{"key":"00O2TK9973U0HI1AUMNJASDGI","value":"8004620917.48616011900","unit":"EUR"},"kf008":{"key":"00O2TK9973U0HI1AUMNJASQ3M","value":"9240350568.80876994500","unit":"EUR"},"kf009":{"key":"00O2TK9973U0HI1AUMNJAT2QQ","value":"11254213092.9705101900","unit":"EUR"},"kf010":{"key":"00O2TK9973U0HI1AUMNJATFDU","value":"12290493166.5930876200","unit":"EUR"},"kf011":{"key":"00O2TK9973U0HI1AUMNJATS0Y","value":"13061887771.7743457000","unit":"EUR"},"kf012":{"key":"00O2TK9973U0HI1AUMNJAU4O2","value":"14744986981.9414423300","unit":"EUR"}},{"char001":{"key":"00O2TK9973U2BMH6Y1EGG8RGD","value":"3.1 FC1 YTD"},"kf001":{"key":"00O2TK9973U0HI1AUMNJAQFXE","value":"1196495273.82198550000","unit":"EUR"},"kf002":{"key":"00O2TK9973U0HI1AUMNJAQM8Y","value":"2531361734.21699052600","unit":"EUR"},"kf003":{"key":"00O2TK9973U0HI1AUMNJAQYW2","value":"4288689120.47435209400","unit":"EUR"},"kf004":{"key":"00O2TK9973U0HI1AUMNJARBJ6","value":"5697103264.58909092000","unit":"EUR"},"kf005":{"key":"00O2TK9973U0HI1AUMNJARO6A","value":"7057124011.58321600000","unit":"EUR"},"kf006":{"key":"00O2TK9973U0HI1AUMNJAS0TE","value":"8505198029.42801204000","unit":"EUR"},"kf007":{"key":"00O2TK9973U0HI1AUMNJASDGI","value":"9779569287.53040907000","unit":"EUR"},"kf008":{"key":"00O2TK9973U0HI1AUMNJASQ3M","value":"11105618249.5920862400","unit":"EUR"},"kf009":{"key":"00O2TK9973U0HI1AUMNJAT2QQ","value":"12597597187.4094914900","unit":"EUR"},"kf010":{"key":"00O2TK9973U0HI1AUMNJATFDU","value":"14040761898.1127862400","unit":"EUR"},"kf011":{"key":"00O2TK9973U0HI1AUMNJATS0Y","value":"16949052281.6818875100","unit":"EUR"},"kf012":{"key":"00O2TK9973U0HI1AUMNJAU4O2","value":"16949052281.6818875100","unit":"EUR"}},{"char001":{"key":"00O2TK9973U0HI1AUMNJAPQN6","value":"1.2 CYM Country Cash Flow"},"kf001":{"key":"00O2TK9973U0HI1AUMNJAQFXE","value":"1141481952.36356873000","unit":"EUR"},"kf002":{"key":"00O2TK9973U0HI1AUMNJAQM8Y","value":"590892376.482555190500","unit":"EUR"},"kf003":{"key":"00O2TK9973U0HI1AUMNJAQYW2","value":"789010310.994522199000","unit":"EUR"},"kf004":{"key":"00O2TK9973U0HI1AUMNJARBJ6","value":"1219568517.74933386410","unit":"EUR"},"kf005":{"key":"00O2TK9973U0HI1AUMNJARO6A","value":"1700318050.90789381040","unit":"EUR"},"kf006":{"key":"00O2TK9973U0HI1AUMNJAS0TE","value":"1913491598.21027904300","unit":"EUR"},"kf007":{"key":"00O2TK9973U0HI1AUMNJASDGI","value":"1340862835.41479484030","unit":"EUR"},"kf008":{"key":"00O2TK9973U0HI1AUMNJASQ3M","value":"1460863150.58011153600","unit":"EUR"},"kf009":{"key":"00O2TK9973U0HI1AUMNJAT2QQ","value":"1647869056.04427116600","unit":"EUR"},"kf010":{"key":"00O2TK9973U0HI1AUMNJATFDU","value":"1348606991.59913182300","unit":"EUR"},"kf011":{"key":"00O2TK9973U0HI1AUMNJATS0Y","value":"827902731.090193665000","unit":"EUR"},"kf012":{"key":"00O2TK9973U0HI1AUMNJAU4O2","value":"2101836323.48917835000","unit":"EUR"}},{"char001":{"key":"00O2TK9973U0HI1AUMNJAPWYQ","value":"2.2 PYM Country Cash Flow"},"kf001":{"key":"00O2TK9973U0HI1AUMNJAQFXE","value":"670100767.034770257000","unit":"EUR"},"kf002":{"key":"00O2TK9973U0HI1AUMNJAQM8Y","value":"557835659.840488365600","unit":"EUR"},"kf003":{"key":"00O2TK9973U0HI1AUMNJAQYW2","value":"688316619.473250904600","unit":"EUR"},"kf004":{"key":"00O2TK9973U0HI1AUMNJARBJ6","value":"1096812678.88066134000","unit":"EUR"},"kf005":{"key":"00O2TK9973U0HI1AUMNJARO6A","value":"1444647984.36891169450","unit":"EUR"},"kf006":{"key":"00O2TK9973U0HI1AUMNJAS0TE","value":"2093702553.99424451950","unit":"EUR"},"kf007":{"key":"00O2TK9973U0HI1AUMNJASDGI","value":"1453204653.89383955960","unit":"EUR"},"kf008":{"key":"00O2TK9973U0HI1AUMNJASQ3M","value":"1235729651.32269041390","unit":"EUR"},"kf009":{"key":"00O2TK9973U0HI1AUMNJAT2QQ","value":"2013862524.16170818600","unit":"EUR"},"kf010":{"key":"00O2TK9973U0HI1AUMNJATFDU","value":"1036280073.62247117900","unit":"EUR"},"kf011":{"key":"00O2TK9973U0HI1AUMNJATS0Y","value":"771394605.181246578000","unit":"EUR"},"kf012":{"key":"00O2TK9973U0HI1AUMNJAU4O2","value":"1683099210.16715145230","unit":"EUR"}},{"char001":{"key":"00O2TK9973U2BMH6O9EAOFOUF","value":"3.2 FC1"},"kf001":{"key":"00O2TK9973U0HI1AUMNJAQFXE","value":"1196495273.82198550000","unit":"EUR"},"kf002":{"key":"00O2TK9973U0HI1AUMNJAQM8Y","value":"1334866460.39500922600","unit":"EUR"},"kf003":{"key":"00O2TK9973U0HI1AUMNJAQYW2","value":"1757327386.25736766700","unit":"EUR"},"kf004":{"key":"00O2TK9973U0HI1AUMNJARBJ6","value":"1408414144.11479022600","unit":"EUR"},"kf005":{"key":"00O2TK9973U0HI1AUMNJARO6A","value":"1360020746.99419519100","unit":"EUR"},"kf006":{"key":"00O2TK9973U0HI1AUMNJAS0TE","value":"1448074017.84485683200","unit":"EUR"},"kf007":{"key":"00O2TK9973U0HI1AUMNJASDGI","value":"1274371258.10208323200","unit":"EUR"},"kf008":{"key":"00O2TK9973U0HI1AUMNJASQ3M","value":"1326048962.06196824200","unit":"EUR"},"kf009":{"key":"00O2TK9973U0HI1AUMNJAT2QQ","value":"1491978937.81742695600","unit":"EUR"},"kf010":{"key":"00O2TK9973U0HI1AUMNJATFDU","value":"1443164710.70313343500","unit":"EUR"},"kf011":{"key":"00O2TK9973U0HI1AUMNJATS0Y","value":"1410826736.14381143500","unit":"EUR"},"kf012":{"key":"00O2TK9973U0HI1AUMNJAU4O2","value":"1497463647.42517943600","unit":"EUR"}}],"filters":[{"id":"0CS_CHART","from":{"key":"BI","value":"BI"},"to":{"key":"","to":""}},{"id":"0CURTYPE","from":{"key":"10","value":"Company code currency"},"to":{"key":"","to":""}},{"id":"0CURTYPE","from":{"key":"20","value":"Controlling area currency"},"to":{"key":"","to":""}},{"id":"0FISCVARNT","from":{"key":"K1","value":"Calendar year, 1 spec. period"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"BKA_CPKD1","value":"ePDM: ProKon Delta Balance Sheet"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"BKA_CPKD2","value":"BKA_CPKD2"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"ECPCCCF","value":"ECPCP - Cashflow"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"FIGLCCFT","value":"FIGLCCFT"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"FIGLCCFTR","value":"FIGLCCFTR"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"BKA_CPKD3","value":"ePDM: ProKon Delta FIGLCCF01"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"BKA_CPKD4","value":"BKA_CPKD4"},"to":{"key":"","to":""}},{"id":"0INFOPROV","from":{"key":"BKA_CPKD6","value":"ePDM: ProKon Delta FIGLCCF02"},"to":{"key":"","to":""}},{"id":"0VALUATION","from":{"key":"#","value":"Legal Valuation"},"to":{"key":"","to":""}}],"variables":[{"id":"DCURRENCY_CDSOI01","from":{"key":"EUR","value":"Euro"},"to":{"key":"","to":""}},{"id":"D0FISCPER_CXSNI00","from":{"key":"009.2017","value":"SEP 2017"},"to":{"key":"","to":""}},{"id":"DFISCYEAR_CXSOL03","from":{"key":"2017","value":"Calendar year, 1 spec. period 2017"},"to":{"key":"","to":""}},{"id":"D0RTYPE_CXSNL01","from":{"key":"Q1F","value":"QBR1 Forecast"},"to":{"key":"","to":""}},{"id":"D0VERSION_TEXT2","from":{"key":"FC1","value":"FC1"},"to":{"key":"","to":""}},{"id":"D0VERSION_CXSMIFC2","from":{"key":"FC1","value":"Forecast 1"},"to":{"key":"","to":""}},{"id":"DDIMKKAX_HDSOI02","from":{"key":"WORLD","value":"Bayer Group"},"to":{"key":"0HIER_NODE","to":""}},{"id":"DREQSTAT_CDSOI01","from":{"key":"R","value":"released"},"to":{"key":"","to":""}},{"id":"DD_GCLCREP_CXOOL01","from":{"key":"GC","value":"Group Currency"},"to":{"key":"","to":""}},{"id":"DD_GCLCREP_CXOOL01","from":{"key":"ALL","value":"ALL"},"to":{"key":"","to":""}},{"id":"DD_GCLCREP_CXOOL01","from":{"key":"#","value":"Not assigned"},"to":{"key":"","to":""}},{"id":"DD_GCLCREP_CXOOL01","from":{"key":"#","value":"Not assigned"},"to":{"key":"","to":""}}]}
+{
+	"query": {
+		"title": "SOA00_COPAPRPCF_QS023",
+		"limitexceeded": false,
+		"nosuchuser": false,
+		"nodata": false,
+		"nosuchquery": false,
+		"noauth": false
+	},
+	"meta": {
+		"char001": {
+			"key": "00O2TK9973U0HI1AUMNJAGS9U",
+			"value": "ROI: Deviations (Keep Sign)"
+		},
+		"kf001": {
+			"key": "00O2TK9973U0HI1AUMNJAQFXE",
+			"value": "\nJan"
+		},
+		"kf002": {
+			"key": "00O2TK9973U0HI1AUMNJAQM8Y",
+			"value": "\nFeb"
+		},
+		"kf003": {
+			"key": "00O2TK9973U0HI1AUMNJAQYW2",
+			"value": "\nMar"
+		},
+		"kf004": {
+			"key": "00O2TK9973U0HI1AUMNJARBJ6",
+			"value": "\nApr"
+		},
+		"kf005": {
+			"key": "00O2TK9973U0HI1AUMNJARO6A",
+			"value": "\nMay"
+		},
+		"kf006": {
+			"key": "00O2TK9973U0HI1AUMNJAS0TE",
+			"value": "\nJun"
+		},
+		"kf007": {
+			"key": "00O2TK9973U0HI1AUMNJASDGI",
+			"value": "\nJul"
+		},
+		"kf008": {
+			"key": "00O2TK9973U0HI1AUMNJASQ3M",
+			"value": "\nAug"
+		},
+		"kf009": {
+			"key": "00O2TK9973U0HI1AUMNJAT2QQ",
+			"value": "\nSep"
+		},
+		"kf010": {
+			"key": "00O2TK9973U0HI1AUMNJATFDU",
+			"value": "\nOct"
+		},
+		"kf011": {
+			"key": "00O2TK9973U0HI1AUMNJATS0Y",
+			"value": "\nNov"
+		},
+		"kf012": {
+			"key": "00O2TK9973U0HI1AUMNJAU4O2",
+			"value": "\nDec"
+		}
+	},
+	"cube": [
+		{
+			"char001": {
+				"key": "00O2TK9973U0HI1AUMNJAH4WY",
+				"value": "1.1 CY Country Cash Flow"
+			},
+			"kf001": {
+				"key": "00O2TK9973U0HI1AUMNJAQFXE",
+				"value": "1140909991.86680373000",
+				"unit": "EUR"
+			},
+			"kf002": {
+				"key": "00O2TK9973U0HI1AUMNJAQM8Y",
+				"value": "1731524419.03477416000",
+				"unit": "EUR"
+			},
+			"kf003": {
+				"key": "00O2TK9973U0HI1AUMNJAQYW2",
+				"value": "2520303069.28521306000",
+				"unit": "EUR"
+			},
+			"kf004": {
+				"key": "00O2TK9973U0HI1AUMNJARBJ6",
+				"value": "3739791397.44681710400",
+				"unit": "EUR"
+			},
+			"kf005": {
+				"key": "00O2TK9973U0HI1AUMNJARO6A",
+				"value": "5439991295.76443342300",
+				"unit": "EUR"
+			},
+			"kf006": {
+				"key": "00O2TK9973U0HI1AUMNJAS0TE",
+				"value": "7353487857.41100998700",
+				"unit": "EUR"
+			},
+			"kf007": {
+				"key": "00O2TK9973U0HI1AUMNJASDGI",
+				"value": "8694350547.47364688600",
+				"unit": "EUR"
+			},
+			"kf008": {
+				"key": "00O2TK9973U0HI1AUMNJASQ3M",
+				"value": "10155190793.2996581970",
+				"unit": "EUR"
+			},
+			"kf009": {
+				"key": "00O2TK9973U0HI1AUMNJAT2QQ",
+				"value": "11803054921.3664674320",
+				"unit": "EUR"
+			},
+			"kf010": {
+				"key": "00O2TK9973U0HI1AUMNJATFDU",
+				"value": "13151663544.9163327460",
+				"unit": "EUR"
+			},
+			"kf011": {
+				"key": "00O2TK9973U0HI1AUMNJATS0Y",
+				"value": "13980335505.5076969200",
+				"unit": "EUR"
+			},
+			"kf012": {
+				"key": "00O2TK9973U0HI1AUMNJAU4O2",
+				"value": "16082126536.2318649200",
+				"unit": "EUR"
+			}
+		},
+		{
+			"char001": {
+				"key": "00O2TK9973U0HI1AUMNJALIXU",
+				"value": "2.1 PY Country Cash Flow"
+			},
+			"kf001": {
+				"key": "00O2TK9973U0HI1AUMNJAQFXE",
+				"value": "670117808.919122057000",
+				"unit": "EUR"
+			},
+			"kf002": {
+				"key": "00O2TK9973U0HI1AUMNJAQM8Y",
+				"value": "1227967849.30873826200",
+				"unit": "EUR"
+			},
+			"kf003": {
+				"key": "00O2TK9973U0HI1AUMNJAQYW2",
+				"value": "1916335501.26470338600",
+				"unit": "EUR"
+			},
+			"kf004": {
+				"key": "00O2TK9973U0HI1AUMNJARBJ6",
+				"value": "3013184391.94881965600",
+				"unit": "EUR"
+			},
+			"kf005": {
+				"key": "00O2TK9973U0HI1AUMNJARO6A",
+				"value": "4457834170.94705536000",
+				"unit": "EUR"
+			},
+			"kf006": {
+				"key": "00O2TK9973U0HI1AUMNJAS0TE",
+				"value": "6551536724.94114905900",
+				"unit": "EUR"
+			},
+			"kf007": {
+				"key": "00O2TK9973U0HI1AUMNJASDGI",
+				"value": "8004739862.64667981900",
+				"unit": "EUR"
+			},
+			"kf008": {
+				"key": "00O2TK9973U0HI1AUMNJASQ3M",
+				"value": "9240944454.62825084400",
+				"unit": "EUR"
+			},
+			"kf009": {
+				"key": "00O2TK9973U0HI1AUMNJAT2QQ",
+				"value": "11254667490.0598032600",
+				"unit": "EUR"
+			},
+			"kf010": {
+				"key": "00O2TK9973U0HI1AUMNJATFDU",
+				"value": "12291001961.5775330200",
+				"unit": "EUR"
+			},
+			"kf011": {
+				"key": "00O2TK9973U0HI1AUMNJATS0Y",
+				"value": "13063999648.5088308000",
+				"unit": "EUR"
+			},
+			"kf012": {
+				"key": "00O2TK9973U0HI1AUMNJAU4O2",
+				"value": "14746742247.4849897600",
+				"unit": "EUR"
+			}
+		},
+		{
+			"char001": {
+				"key": "00O2TK9973U2BMH6Y1EGG8RGD",
+				"value": "3.1 FC1 YTD"
+			},
+			"kf001": {
+				"key": "00O2TK9973U0HI1AUMNJAQFXE",
+				"value": "1196495273.82198150000",
+				"unit": "EUR"
+			},
+			"kf002": {
+				"key": "00O2TK9973U0HI1AUMNJAQM8Y",
+				"value": "2531361734.21699352500",
+				"unit": "EUR"
+			},
+			"kf003": {
+				"key": "00O2TK9973U0HI1AUMNJAQYW2",
+				"value": "4288689120.47435809300",
+				"unit": "EUR"
+			},
+			"kf004": {
+				"key": "00O2TK9973U0HI1AUMNJARBJ6",
+				"value": "5697103264.58914092000",
+				"unit": "EUR"
+			},
+			"kf005": {
+				"key": "00O2TK9973U0HI1AUMNJARO6A",
+				"value": "7057124011.58320401000",
+				"unit": "EUR"
+			},
+			"kf006": {
+				"key": "00O2TK9973U0HI1AUMNJAS0TE",
+				"value": "8505198029.42820006000",
+				"unit": "EUR"
+			},
+			"kf007": {
+				"key": "00O2TK9973U0HI1AUMNJASDGI",
+				"value": "9779569287.53021210000",
+				"unit": "EUR"
+			},
+			"kf008": {
+				"key": "00O2TK9973U0HI1AUMNJASQ3M",
+				"value": "11105618249.5920882300",
+				"unit": "EUR"
+			},
+			"kf009": {
+				"key": "00O2TK9973U0HI1AUMNJAT2QQ",
+				"value": "12597597187.4096625000",
+				"unit": "EUR"
+			},
+			"kf010": {
+				"key": "00O2TK9973U0HI1AUMNJATFDU",
+				"value": "14040761898.1127422100",
+				"unit": "EUR"
+			},
+			"kf011": {
+				"key": "00O2TK9973U0HI1AUMNJATS0Y",
+				"value": "16949052281.6819405100",
+				"unit": "EUR"
+			},
+			"kf012": {
+				"key": "00O2TK9973U0HI1AUMNJAU4O2",
+				"value": "16949052281.6819405100",
+				"unit": "EUR"
+			}
+		},
+		{
+			"char001": {
+				"key": "00O2TK9973U0HI1AUMNJAPQN6",
+				"value": "1.2 CYM Country Cash Flow"
+			},
+			"kf001": {
+				"key": "00O2TK9973U0HI1AUMNJAQFXE",
+				"value": "1140909991.86680373000",
+				"unit": "EUR"
+			},
+			"kf002": {
+				"key": "00O2TK9973U0HI1AUMNJAQM8Y",
+				"value": "590614427.167967800500",
+				"unit": "EUR"
+			},
+			"kf003": {
+				"key": "00O2TK9973U0HI1AUMNJAQYW2",
+				"value": "788778650.250406899000",
+				"unit": "EUR"
+			},
+			"kf004": {
+				"key": "00O2TK9973U0HI1AUMNJARBJ6",
+				"value": "1219488328.16154820410",
+				"unit": "EUR"
+			},
+			"kf005": {
+				"key": "00O2TK9973U0HI1AUMNJARO6A",
+				"value": "1700199898.31765559040",
+				"unit": "EUR"
+			},
+			"kf006": {
+				"key": "00O2TK9973U0HI1AUMNJAS0TE",
+				"value": "1913496561.64649648300",
+				"unit": "EUR"
+			},
+			"kf007": {
+				"key": "00O2TK9973U0HI1AUMNJASDGI",
+				"value": "1340862690.06253529020",
+				"unit": "EUR"
+			},
+			"kf008": {
+				"key": "00O2TK9973U0HI1AUMNJASQ3M",
+				"value": "1460840245.82611911000",
+				"unit": "EUR"
+			},
+			"kf009": {
+				"key": "00O2TK9973U0HI1AUMNJAT2QQ",
+				"value": "1647864128.06682033700",
+				"unit": "EUR"
+			},
+			"kf010": {
+				"key": "00O2TK9973U0HI1AUMNJATFDU",
+				"value": "1348608623.54967746300",
+				"unit": "EUR"
+			},
+			"kf011": {
+				"key": "00O2TK9973U0HI1AUMNJATS0Y",
+				"value": "828671960.591342465000",
+				"unit": "EUR"
+			},
+			"kf012": {
+				"key": "00O2TK9973U0HI1AUMNJAU4O2",
+				"value": "2101791030.72438216000",
+				"unit": "EUR"
+			}
+		},
+		{
+			"char001": {
+				"key": "00O2TK9973U0HI1AUMNJAPWYQ",
+				"value": "2.2 PYM Country Cash Flow"
+			},
+			"kf001": {
+				"key": "00O2TK9973U0HI1AUMNJAQFXE",
+				"value": "670117808.919122057000",
+				"unit": "EUR"
+			},
+			"kf002": {
+				"key": "00O2TK9973U0HI1AUMNJAQM8Y",
+				"value": "557850040.389613955500",
+				"unit": "EUR"
+			},
+			"kf003": {
+				"key": "00O2TK9973U0HI1AUMNJAQYW2",
+				"value": "688367651.955978604600",
+				"unit": "EUR"
+			},
+			"kf004": {
+				"key": "00O2TK9973U0HI1AUMNJARBJ6",
+				"value": "1096848890.68406950000",
+				"unit": "EUR"
+			},
+			"kf005": {
+				"key": "00O2TK9973U0HI1AUMNJARO6A",
+				"value": "1444649778.99820066450",
+				"unit": "EUR"
+			},
+			"kf006": {
+				"key": "00O2TK9973U0HI1AUMNJAS0TE",
+				"value": "2093702553.99424864950",
+				"unit": "EUR"
+			},
+			"kf007": {
+				"key": "00O2TK9973U0HI1AUMNJASDGI",
+				"value": "1453203137.70564295960",
+				"unit": "EUR"
+			},
+			"kf008": {
+				"key": "00O2TK9973U0HI1AUMNJASQ3M",
+				"value": "1236204591.98140917390",
+				"unit": "EUR"
+			},
+			"kf009": {
+				"key": "00O2TK9973U0HI1AUMNJAT2QQ",
+				"value": "2013723035.43165813400",
+				"unit": "EUR"
+			},
+			"kf010": {
+				"key": "00O2TK9973U0HI1AUMNJATFDU",
+				"value": "1036334471.51750272000",
+				"unit": "EUR"
+			},
+			"kf011": {
+				"key": "00O2TK9973U0HI1AUMNJATS0Y",
+				"value": "772997686.931391118000",
+				"unit": "EUR"
+			},
+			"kf012": {
+				"key": "00O2TK9973U0HI1AUMNJAU4O2",
+				"value": "1682742598.97631995230",
+				"unit": "EUR"
+			}
+		},
+		{
+			"char001": {
+				"key": "00O2TK9973U2BMH6O9EAOFOUF",
+				"value": "3.2 FC1"
+			},
+			"kf001": {
+				"key": "00O2TK9973U0HI1AUMNJAQFXE",
+				"value": "1196495273.82198150000",
+				"unit": "EUR"
+			},
+			"kf002": {
+				"key": "00O2TK9973U0HI1AUMNJAQM8Y",
+				"value": "1334866460.39501362600",
+				"unit": "EUR"
+			},
+			"kf003": {
+				"key": "00O2TK9973U0HI1AUMNJAQYW2",
+				"value": "1757327386.25736096700",
+				"unit": "EUR"
+			},
+			"kf004": {
+				"key": "00O2TK9973U0HI1AUMNJARBJ6",
+				"value": "1408414144.11479612600",
+				"unit": "EUR"
+			},
+			"kf005": {
+				"key": "00O2TK9973U0HI1AUMNJARO6A",
+				"value": "1360020746.99419519100",
+				"unit": "EUR"
+			},
+			"kf006": {
+				"key": "00O2TK9973U0HI1AUMNJAS0TE",
+				"value": "1448074017.84486513200",
+				"unit": "EUR"
+			},
+			"kf007": {
+				"key": "00O2TK9973U0HI1AUMNJASDGI",
+				"value": "1274371258.10208063200",
+				"unit": "EUR"
+			},
+			"kf008": {
+				"key": "00O2TK9973U0HI1AUMNJASQ3M",
+				"value": "1326048962.06196644300",
+				"unit": "EUR"
+			},
+			"kf009": {
+				"key": "00O2TK9973U0HI1AUMNJAT2QQ",
+				"value": "1491978937.81742525600",
+				"unit": "EUR"
+			},
+			"kf010": {
+				"key": "00O2TK9973U0HI1AUMNJATFDU",
+				"value": "1443164710.70313483500",
+				"unit": "EUR"
+			},
+			"kf011": {
+				"key": "00O2TK9973U0HI1AUMNJATS0Y",
+				"value": "1410826736.14381623500",
+				"unit": "EUR"
+			},
+			"kf012": {
+				"key": "00O2TK9973U0HI1AUMNJAU4O2",
+				"value": "1497463647.42517943600",
+				"unit": "EUR"
+			}
+		}
+	],
+	"filters": [
+		{
+			"id": "0CS_CHART",
+			"from": {
+				"key": "BI",
+				"value": "BI"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0CURTYPE",
+			"from": {
+				"key": "10",
+				"value": "Company code currency"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0CURTYPE",
+			"from": {
+				"key": "20",
+				"value": "Controlling area currency"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0FISCVARNT",
+			"from": {
+				"key": "K1",
+				"value": "Calendar year, 1 spec. period"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "BKA_CPKD1",
+				"value": "ePDM: ProKon Delta Balance Sheet"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "BKA_CPKD2",
+				"value": "BKA_CPKD2"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "ECPCCCF",
+				"value": "ECPCP - Cashflow"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "FIGLCCFT",
+				"value": "FIGLCCFT"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "FIGLCCFTR",
+				"value": "FIGLCCFTR"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "BKA_CPKD3",
+				"value": "ePDM: ProKon Delta FIGLCCF01"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "BKA_CPKD4",
+				"value": "BKA_CPKD4"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0INFOPROV",
+			"from": {
+				"key": "BKA_CPKD6",
+				"value": "ePDM: ProKon Delta FIGLCCF02"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "0VALUATION",
+			"from": {
+				"key": "#",
+				"value": "Legal Valuation"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		}
+	],
+	"variables": [
+		{
+			"id": "DCURRENCY_CDSOI01",
+			"from": {
+				"key": "EUR",
+				"value": "Euro"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "D0FISCPER_CXSNI00",
+			"from": {
+				"key": "009.2017",
+				"value": "SEP 2017"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "DFISCYEAR_CXSOL03",
+			"from": {
+				"key": "2017",
+				"value": "Calendar year, 1 spec. period 2017"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "D0RTYPE_CXSNL01",
+			"from": {
+				"key": "Q1F",
+				"value": "QBR1 Forecast"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "D0VERSION_TEXT2",
+			"from": {
+				"key": "FC1",
+				"value": "FC1"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "D0VERSION_CXSMIFC2",
+			"from": {
+				"key": "FC1",
+				"value": "Forecast 1"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "DDIMKKAX_HDSOI02",
+			"from": {
+				"key": "WORLD",
+				"value": "Bayer Group"
+			},
+			"to": {
+				"key": "0HIER_NODE",
+				"to": ""
+			}
+		},
+		{
+			"id": "DREQSTAT_CDSOI01",
+			"from": {
+				"key": "R",
+				"value": "released"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "DD_GCLCREP_CXOOL01",
+			"from": {
+				"key": "GC",
+				"value": "Group Currency"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "DD_GCLCREP_CXOOL01",
+			"from": {
+				"key": "ALL",
+				"value": "ALL"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "DD_GCLCREP_CXOOL01",
+			"from": {
+				"key": "#",
+				"value": "Not assigned"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		},
+		{
+			"id": "DD_GCLCREP_CXOOL01",
+			"from": {
+				"key": "#",
+				"value": "Not assigned"
+			},
+			"to": {
+				"key": "",
+				"to": ""
+			}
+		}
+	]
+}
