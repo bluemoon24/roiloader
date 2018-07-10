@@ -48,6 +48,13 @@ function transformPortletConfig(config) {
 class Services {
   // constructor() {}
 
+  async writeStats(stobj) {
+    fs.appendFile(`${state.directories.statistics}/stats.json`, JSON.stringify(stobj, null, '\t'), 'utf8', (err) => {
+      if (err) throw err;
+      console.log('stats appended to file');
+    })
+  }
+
   async getPortletHeaders() {
     function getCache() {
       try {
@@ -61,10 +68,14 @@ class Services {
     if (state.offline) getCache()
     else
     try {
+      let t0 = performance.now()
       let response = await axios.get(state.portlets.urls.headers.url, {
         params: state.portlets.urls.headers.params
         // responseType: 'stream'
       })
+      let t1 = performance.now()
+      this.writeStats({date: new Date(), id: 'portletHeaders', source: 'portlets', function: 'getPortletHeaders', time: (t1 - t0)/1000})
+
       // console.log('streaming response from service', response.data)
       this.cachePortletHeaderData(response.data)
       return response.data
@@ -99,9 +110,14 @@ class Services {
     if (state.offline) getCache()
     else
     try {
+      let t0 = performance.now()
       let response = await axios.get(state.portlets.urls.config.url, {
         params: {configId: pid.id, scope: pid.scope, ...state.portlets.urls.config.params}
       })
+      let t1 = performance.now()
+      this.writeStats({date: new Date(), id: pid.scope + pid.id, source: state.datavolume.source.sysid, function: 'portletConfig', time: (t1 - t0)/1000})
+      console.log('stats:', state.stats)
+
       let pcd = transformPortletConfig(response.data[0])
       state.portletConfigData = pcd
       if (state.portletConfigData) this.cachePortletConfigData()
@@ -148,6 +164,7 @@ class Services {
     if (state.offline) getCache()
     else
     try {
+      let t0 = performance.now()
       switch (source.systype) {
         case 'sapbw':
           def = await sapbw.getDataVolumeDefinition(source, params)
@@ -156,6 +173,9 @@ class Services {
           def = await arcgis.getDataVolumeDefinition(source, params)
         break;
       }
+      let t1 = performance.now()
+      this.writeStats({date: new Date(), id: dvbase.basehash, source: source.sysid, function: 'getDatavolumeDefinition', time: (t1 - t0)/1000})
+
       this.cacheDefinition({path: path, data: def, source: source})
     } catch (err) {
       console.log('loading definition from cache. Exception was', err)
@@ -200,6 +220,7 @@ class Services {
     if (state.offline) getCache()
     else
     try {
+      let t0 = performance.now()
       switch (source.systype) {
         case 'sapbw':
           data = await sapbw.getDataVolume(source, state.datavolume.definition, params)
@@ -208,6 +229,9 @@ class Services {
           data = await arcgis.getDataVolume(source, state.datavolume.definition, params)
         break
       }
+      let t1 = performance.now()
+      this.writeStats({date: new Date(), id: dvbase.basehash, source: source.sysid, function: 'getDataVolume', time: (t1 - t0)/1000})
+
       state.datavolume = {definition: state.datavolume.definition, data: data, source: source,  dvbase: dvbase}
       this.cacheDatavolumeData(params)
     } catch (err) {
@@ -246,6 +270,13 @@ export class RoiLoader {
     this.state.portlets = config.portlets
     this.state.datasources = config.datasources
     this.state.directories = config.directories
+
+    let mkdirp = require('mkdirp') // creates full path subdirectories, if don't exist
+    mkdirp(state.directories.statistics, function (err) {
+      if (err) console.error(err)
+      else console.log('created:', state.directories.statistics)
+    })
+
   }
 
   get state() {
