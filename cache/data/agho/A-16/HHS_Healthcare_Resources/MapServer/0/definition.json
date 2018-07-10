@@ -1,1 +1,320 @@
-{"version":10.5,"title":"Facilities per state","id":"A-16/HHS_Healthcare_Resources/MapServer/0","data":{"currentVersion":10.5,"id":0,"name":"Facilities per state","type":"Feature Layer","description":"This layer shows the total number of healthcare facilities (hospitals, medical centers, federally qualified health centers, and home health services) and other healthcare availability information. The data was derived by juxtaposing the facilities provided by the U.S. Department of Health & Human Services (http://www.hhs.gov/), current as of 2012, and population numbers from the U.S. Census Bureau’s 2010 census (http://www.census.gov/).  The healthcare system capacity is calculated as the number of facilities in the state multiplied by the National average (number of people per facility).  The number of facilities of each type needed is calculated by dividing the state population by the National average (number of people per facility).  The facility surplus or need is calculated by subtracting the number of facilities needed (based on the population size) from the number of existing facilities.  Accessibility and travel time are not considered in these calculations.  This state level data is displayed at scales smaller than 1:10 million.","geometryType":"esriGeometryPolygon","sourceSpatialReference":{"wkid":102100,"latestWkid":3857},"copyrightText":"U.S. Department of Health & Human Services (http://www.hhs.gov/), Centers for Medicare and Medicaid Services, Health.data.gov (http://www.data.gov/health)","parentLayer":null,"subLayers":[],"minScale":50000000,"maxScale":10000000,"drawingInfo":{"renderer":{"type":"classBreaks","field":"TotFac","classificationMethod":"esriClassifyManual","backgroundFillSymbol":{"type":"esriSFS","style":"esriSFSSolid","color":[0,0,0,0],"outline":{"type":"esriSLS","style":"esriSLSSolid","color":[78,78,78,255],"width":0.4}},"minValue":40,"classBreakInfos":[{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[0,0,0,0],"outline":null},"classMaxValue":200,"label":"<= 200","description":""},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[0,0,0,0],"outline":null},"classMaxValue":400,"label":"201 - 400","description":""},{"symbol":{"type":"esriSFS","style":"esriSFSSolid","color":[0,0,0,0],"outline":null},"classMaxValue":3000,"label":"401 - 3,000","description":""}]},"transparency":0,"labelingInfo":null},"defaultVisibility":true,"extent":{"xmin":-19840230.3902,"ymin":2144435.340399999,"xmax":-7452840.4651999995,"ymax":11537127.308400001,"spatialReference":{"wkid":102100,"latestWkid":3857}},"hasAttachments":false,"htmlPopupType":"esriServerHTMLPopupTypeAsHTMLText","displayField":"NAME","typeIdField":null,"fields":[{"name":"OBJECTID","type":"esriFieldTypeOID","alias":"OBJECTID","domain":null},{"name":"ID","type":"esriFieldTypeString","alias":"ID","length":2,"domain":null},{"name":"ST_ABBREV","type":"esriFieldTypeString","alias":"State Abbreviation","length":2,"domain":null},{"name":"TOTPOP10","type":"esriFieldTypeInteger","alias":"2010 Population","domain":null},{"name":"Hospitals","type":"esriFieldTypeInteger","alias":"Hospitals","domain":null},{"name":"MedicalCenters","type":"esriFieldTypeInteger","alias":"Medical Centers","domain":null},{"name":"FQHC","type":"esriFieldTypeInteger","alias":"Federally Qualified Health Centers","domain":null},{"name":"HomeHealthServices","type":"esriFieldTypeInteger","alias":"Home Health Services","domain":null},{"name":"NursingHomes","type":"esriFieldTypeInteger","alias":"Nursing Homes","domain":null},{"name":"Pop65_Over","type":"esriFieldTypeInteger","alias":"Population 65 and over","domain":null},{"name":"Gen5","type":"esriFieldTypeGeometry","alias":"Gen5","domain":null},{"name":"NAME","type":"esriFieldTypeString","alias":"Name","length":22,"domain":null},{"name":"HospNeed","type":"esriFieldTypeSmallInteger","alias":"Hospitals Needed","domain":null},{"name":"MedCenNeed","type":"esriFieldTypeSmallInteger","alias":"Medical Centers Needed","domain":null},{"name":"TotFac","type":"esriFieldTypeInteger","alias":"Number of Facilities","domain":null},{"name":"FacSurplNeed","type":"esriFieldTypeInteger","alias":"Facility Surplus +/Need -","domain":null},{"name":"HomeHealthNeed","type":"esriFieldTypeInteger","alias":"Home Health Services Needed","domain":null},{"name":"FQHCNeed","type":"esriFieldTypeInteger","alias":"Federally Qualified Health Centers Needed","domain":null},{"name":"NursingNeed","type":"esriFieldTypeInteger","alias":"Nursing Homes Needed","domain":null},{"name":"Capacity","type":"esriFieldTypeInteger","alias":"Capacity (Number of People)","domain":null},{"name":"PeoplePerFac","type":"esriFieldTypeInteger","alias":"People per Facility (State)","domain":null},{"name":"NatPeoplePerFac","type":"esriFieldTypeInteger","alias":"People per Facility (Nation)","domain":null},{"name":"People65perNH","type":"esriFieldTypeInteger","alias":"People 65 and Older per Nursing Home (State)","domain":null},{"name":"NatPeople65perNH","type":"esriFieldTypeInteger","alias":"People 65 and Older per Nursing Home (Nation)","domain":null},{"name":"NHCapacity","type":"esriFieldTypeInteger","alias":"Nursing Home Capacity (People)","domain":null},{"name":"NHSurplNeed","type":"esriFieldTypeInteger","alias":"Nursing Home Surplus +/Need -","domain":null}],"indexes":[{"name":"FDO_Gen5","fields":"Gen5","isAscending":true,"isUnique":false,"description":""},{"name":"ID","fields":"ID","isAscending":true,"isUnique":false,"description":""}],"relationships":[],"canModifyLayer":true,"canScaleSymbols":false,"hasLabels":false,"capabilities":"Map,Query,Data","maxRecordCount":1000,"supportsStatistics":true,"supportsAdvancedQueries":true,"supportedQueryFormats":"JSON, AMF, geoJSON","ownershipBasedAccessControlForFeatures":{"allowOthersToQuery":true},"useStandardizedQueries":true,"advancedQueryCapabilities":{"useStandardizedQueries":true,"supportsStatistics":true,"supportsOrderBy":true,"supportsDistinct":true,"supportsPagination":true,"supportsTrueCurve":true,"supportsReturningQueryExtent":true,"supportsQueryWithDistance":true,"supportsSqlExpression":false},"supportsDatumTransformation":true}}
+{
+	"version": 10.5,
+	"title": "Facilities per state",
+	"id": "A-16/HHS_Healthcare_Resources/MapServer/0",
+	"data": {
+		"currentVersion": 10.5,
+		"id": 0,
+		"name": "Facilities per state",
+		"type": "Feature Layer",
+		"description": "This layer shows the total number of healthcare facilities (hospitals, medical centers, federally qualified health centers, and home health services) and other healthcare availability information. The data was derived by juxtaposing the facilities provided by the U.S. Department of Health & Human Services (http://www.hhs.gov/), current as of 2012, and population numbers from the U.S. Census Bureau’s 2010 census (http://www.census.gov/).  The healthcare system capacity is calculated as the number of facilities in the state multiplied by the National average (number of people per facility).  The number of facilities of each type needed is calculated by dividing the state population by the National average (number of people per facility).  The facility surplus or need is calculated by subtracting the number of facilities needed (based on the population size) from the number of existing facilities.  Accessibility and travel time are not considered in these calculations.  This state level data is displayed at scales smaller than 1:10 million.",
+		"geometryType": "esriGeometryPolygon",
+		"sourceSpatialReference": {
+			"wkid": 102100,
+			"latestWkid": 3857
+		},
+		"copyrightText": "U.S. Department of Health & Human Services (http://www.hhs.gov/), Centers for Medicare and Medicaid Services, Health.data.gov (http://www.data.gov/health)",
+		"parentLayer": null,
+		"subLayers": [],
+		"minScale": 50000000,
+		"maxScale": 10000000,
+		"drawingInfo": {
+			"renderer": {
+				"type": "classBreaks",
+				"field": "TotFac",
+				"classificationMethod": "esriClassifyManual",
+				"backgroundFillSymbol": {
+					"type": "esriSFS",
+					"style": "esriSFSSolid",
+					"color": [
+						0,
+						0,
+						0,
+						0
+					],
+					"outline": {
+						"type": "esriSLS",
+						"style": "esriSLSSolid",
+						"color": [
+							78,
+							78,
+							78,
+							255
+						],
+						"width": 0.4
+					}
+				},
+				"minValue": 40,
+				"classBreakInfos": [
+					{
+						"symbol": {
+							"type": "esriSFS",
+							"style": "esriSFSSolid",
+							"color": [
+								0,
+								0,
+								0,
+								0
+							],
+							"outline": null
+						},
+						"classMaxValue": 200,
+						"label": "<= 200",
+						"description": ""
+					},
+					{
+						"symbol": {
+							"type": "esriSFS",
+							"style": "esriSFSSolid",
+							"color": [
+								0,
+								0,
+								0,
+								0
+							],
+							"outline": null
+						},
+						"classMaxValue": 400,
+						"label": "201 - 400",
+						"description": ""
+					},
+					{
+						"symbol": {
+							"type": "esriSFS",
+							"style": "esriSFSSolid",
+							"color": [
+								0,
+								0,
+								0,
+								0
+							],
+							"outline": null
+						},
+						"classMaxValue": 3000,
+						"label": "401 - 3,000",
+						"description": ""
+					}
+				]
+			},
+			"transparency": 0,
+			"labelingInfo": null
+		},
+		"defaultVisibility": true,
+		"extent": {
+			"xmin": -19840230.3902,
+			"ymin": 2144435.340399999,
+			"xmax": -7452840.4651999995,
+			"ymax": 11537127.308400001,
+			"spatialReference": {
+				"wkid": 102100,
+				"latestWkid": 3857
+			}
+		},
+		"hasAttachments": false,
+		"htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+		"displayField": "NAME",
+		"typeIdField": null,
+		"fields": [
+			{
+				"name": "OBJECTID",
+				"type": "esriFieldTypeOID",
+				"alias": "OBJECTID",
+				"domain": null
+			},
+			{
+				"name": "ID",
+				"type": "esriFieldTypeString",
+				"alias": "ID",
+				"length": 2,
+				"domain": null
+			},
+			{
+				"name": "ST_ABBREV",
+				"type": "esriFieldTypeString",
+				"alias": "State Abbreviation",
+				"length": 2,
+				"domain": null
+			},
+			{
+				"name": "TOTPOP10",
+				"type": "esriFieldTypeInteger",
+				"alias": "2010 Population",
+				"domain": null
+			},
+			{
+				"name": "Hospitals",
+				"type": "esriFieldTypeInteger",
+				"alias": "Hospitals",
+				"domain": null
+			},
+			{
+				"name": "MedicalCenters",
+				"type": "esriFieldTypeInteger",
+				"alias": "Medical Centers",
+				"domain": null
+			},
+			{
+				"name": "FQHC",
+				"type": "esriFieldTypeInteger",
+				"alias": "Federally Qualified Health Centers",
+				"domain": null
+			},
+			{
+				"name": "HomeHealthServices",
+				"type": "esriFieldTypeInteger",
+				"alias": "Home Health Services",
+				"domain": null
+			},
+			{
+				"name": "NursingHomes",
+				"type": "esriFieldTypeInteger",
+				"alias": "Nursing Homes",
+				"domain": null
+			},
+			{
+				"name": "Pop65_Over",
+				"type": "esriFieldTypeInteger",
+				"alias": "Population 65 and over",
+				"domain": null
+			},
+			{
+				"name": "Gen5",
+				"type": "esriFieldTypeGeometry",
+				"alias": "Gen5",
+				"domain": null
+			},
+			{
+				"name": "NAME",
+				"type": "esriFieldTypeString",
+				"alias": "Name",
+				"length": 22,
+				"domain": null
+			},
+			{
+				"name": "HospNeed",
+				"type": "esriFieldTypeSmallInteger",
+				"alias": "Hospitals Needed",
+				"domain": null
+			},
+			{
+				"name": "MedCenNeed",
+				"type": "esriFieldTypeSmallInteger",
+				"alias": "Medical Centers Needed",
+				"domain": null
+			},
+			{
+				"name": "TotFac",
+				"type": "esriFieldTypeInteger",
+				"alias": "Number of Facilities",
+				"domain": null
+			},
+			{
+				"name": "FacSurplNeed",
+				"type": "esriFieldTypeInteger",
+				"alias": "Facility Surplus +/Need -",
+				"domain": null
+			},
+			{
+				"name": "HomeHealthNeed",
+				"type": "esriFieldTypeInteger",
+				"alias": "Home Health Services Needed",
+				"domain": null
+			},
+			{
+				"name": "FQHCNeed",
+				"type": "esriFieldTypeInteger",
+				"alias": "Federally Qualified Health Centers Needed",
+				"domain": null
+			},
+			{
+				"name": "NursingNeed",
+				"type": "esriFieldTypeInteger",
+				"alias": "Nursing Homes Needed",
+				"domain": null
+			},
+			{
+				"name": "Capacity",
+				"type": "esriFieldTypeInteger",
+				"alias": "Capacity (Number of People)",
+				"domain": null
+			},
+			{
+				"name": "PeoplePerFac",
+				"type": "esriFieldTypeInteger",
+				"alias": "People per Facility (State)",
+				"domain": null
+			},
+			{
+				"name": "NatPeoplePerFac",
+				"type": "esriFieldTypeInteger",
+				"alias": "People per Facility (Nation)",
+				"domain": null
+			},
+			{
+				"name": "People65perNH",
+				"type": "esriFieldTypeInteger",
+				"alias": "People 65 and Older per Nursing Home (State)",
+				"domain": null
+			},
+			{
+				"name": "NatPeople65perNH",
+				"type": "esriFieldTypeInteger",
+				"alias": "People 65 and Older per Nursing Home (Nation)",
+				"domain": null
+			},
+			{
+				"name": "NHCapacity",
+				"type": "esriFieldTypeInteger",
+				"alias": "Nursing Home Capacity (People)",
+				"domain": null
+			},
+			{
+				"name": "NHSurplNeed",
+				"type": "esriFieldTypeInteger",
+				"alias": "Nursing Home Surplus +/Need -",
+				"domain": null
+			}
+		],
+		"indexes": [
+			{
+				"name": "FDO_Gen5",
+				"fields": "Gen5",
+				"isAscending": true,
+				"isUnique": false,
+				"description": ""
+			},
+			{
+				"name": "ID",
+				"fields": "ID",
+				"isAscending": true,
+				"isUnique": false,
+				"description": ""
+			}
+		],
+		"relationships": [],
+		"canModifyLayer": true,
+		"canScaleSymbols": false,
+		"hasLabels": false,
+		"capabilities": "Map,Query,Data",
+		"maxRecordCount": 1000,
+		"supportsStatistics": true,
+		"supportsAdvancedQueries": true,
+		"supportedQueryFormats": "JSON, AMF, geoJSON",
+		"ownershipBasedAccessControlForFeatures": {
+			"allowOthersToQuery": true
+		},
+		"useStandardizedQueries": true,
+		"advancedQueryCapabilities": {
+			"useStandardizedQueries": true,
+			"supportsStatistics": true,
+			"supportsOrderBy": true,
+			"supportsDistinct": true,
+			"supportsPagination": true,
+			"supportsTrueCurve": true,
+			"supportsReturningQueryExtent": true,
+			"supportsQueryWithDistance": true,
+			"supportsSqlExpression": false
+		},
+		"supportsDatumTransformation": true
+	}
+}

@@ -1,10 +1,23 @@
 <template>
   <v-container fluid>
-      <v-toolbar>
-      <v-btn @click="getData('PROD4068')">Get PROD4068 Data</v-btn>
-      <v-btn @click="getData('PROD4069')">Get PROD4069 Data</v-btn>
-      <v-btn @click="getData('PROD2576')">Get PROD2576 Data</v-btn>
-      <v-btn @click="getData('EXPERIMENTAL0001')">Get EXPERIMENTAL0001</v-btn>
+    <v-toolbar light>
+      <v-toolbar-title>Config</v-toolbar-title>
+      <!-- <v-spacer></v-spacer> -->
+      <v-btn small flat @click="getPortletHeaders()">Headers</v-btn>
+      <v-btn small flat @click="getPortletConfig('PROD4068')">PROD4068</v-btn>
+      <v-btn small flat @click="getPortletConfig('PROD4069')">PROD4069</v-btn>
+      <v-btn small flat @click="getPortletConfig('PROD2576')">PROD2576</v-btn>
+      <v-btn small flat @click="getPortletConfig('EXPERIMENTAL0001')">EXPERIMENTAL0001</v-btn>
+      <v-spacer></v-spacer>
+    <v-switch v-model="rdl.offline" label="offline" small flat ></v-switch>
+  </v-toolbar>
+      <v-toolbar light>
+        <v-toolbar-title>Data</v-toolbar-title>
+        <!-- <v-spacer></v-spacer> -->
+      <v-btn small flat @click="getData('PROD4068')">PROD4068</v-btn>
+      <v-btn small flat @click="getData('PROD4069')">PROD4069</v-btn>
+      <v-btn small flat @click="getData('PROD2576')">PROD2576</v-btn>
+      <v-btn small flat @click="getData('EXPERIMENTAL0001')">EXPERIMENTAL0001</v-btn>
     </v-toolbar>
       <v-layout column align-center>
         <v-container fluid grid-list-md>
@@ -14,23 +27,26 @@
               :value="textarea"
               clearable
               readonly
-              :loading="taloading"
-            ></v-textarea>
+            >
+          </v-textarea>
           </v-container>
         </v-layout>
   </v-container>
 </template>
 
 <script>
-import { RoiDataLoader } from '@/components/roi-dataloader.js'
+import { RoiDataLoader, RoiLoader } from '@/components/roi-dataloader.js'
 import arcgis from '@/services/arcgis.js'
 
 export default {
   name: 'roi-loader',
   data: () => ({
+    cache_only: false,
+    ignore_cache: false,
     textarea: '',
     data: '',
     rdl: '',
+    rl: '',
     taloading: false,
     asource:
       {
@@ -48,6 +64,7 @@ export default {
 
   created () {
     this.rdl = new RoiDataLoader()
+    this.rl = new RoiLoader()
   },
 
   methods: {
@@ -55,7 +72,14 @@ export default {
       this.taloading = true
       this.data = await this.rdl.getPortletHeaders()
       this.taloading = false
-      this.textarea = JSON.stringify(this.data)
+      this.textarea = JSON.stringify(this.data, null, '\t')
+    },
+
+    async getPortletConfig(pid) {
+      this.taloading = true
+      this.data = await this.rl.getPortletConfig(pid)
+      this.taloading = false
+      this.textarea = JSON.stringify(this.data, null, '\t')
     },
 
     async getData(pid) {

@@ -13,6 +13,7 @@ const axios = require('axios')
 // return hello.bind(this)('0.1') // memorize: if we need 'this' in a private function
 
 let state = {
+  offline: false,
   datavolume: {
     definition: {},
     data: {},
@@ -24,6 +25,7 @@ let state = {
   directories: {},
   portletConfigData: {}
 }
+
 
 function transformPortletConfig(config) {
     // helper function for (interim) transformation of service format to new standard
@@ -47,6 +49,17 @@ class Services {
   // constructor() {}
 
   async getPortletHeaders() {
+    function getCache() {
+      try {
+        let data = fs.readFileSync(state.portlets.headers, 'utf8')
+        return JSON.parse(data)
+      } catch (err) {
+        console.log('Error getting header data from file', state.portlets.headers, err)
+      }
+      return data
+    }
+    if (state.offline) getCache()
+    else
     try {
       let response = await axios.get(state.portlets.urls.headers.url, {
         params: state.portlets.urls.headers.params
@@ -57,12 +70,7 @@ class Services {
       return response.data
     } catch (err) {
       console.log('reading portlet header data from cache. Error was', err)
-      try {
-        let data = fs.readFileSync(state.portlets.headers, 'utf8')
-        return JSON.parse(data)
-      } catch (err) {
-        console.log('Error getting header data from file', state.portlets.headers, err)
-      }
+      return getCache()
     }
   }
 
@@ -72,14 +80,24 @@ class Services {
       if (err) console.error(err)
       else console.log('created:', state.directories.portlets)
     })
-
-    fs.writeFile(state.portlets.headers, JSON.stringify(data), 'utf8', (err) => {
+    fs.writeFile(state.portlets.headers, JSON.stringify(data, null, '\t'), 'utf8', (err) => {
       if (err) console.log('Error writing headers to cache', err)
       else console.log('header saved to cache', state.portlets.headers)
     })
   }
 
   async getPortletConfig (pid) {
+    function getCache() {
+      try {
+        let fname = state.portlets.config.replace('<id>', '' + pid.scope + pid.id)
+        let portlet = fs.readFileSync(fname, 'utf8')
+        state.portletConfigData = JSON.parse(portlet)
+      } catch (err) {
+        console.log('Error getting config data from file', err)
+      }
+    }
+    if (state.offline) getCache()
+    else
     try {
       let response = await axios.get(state.portlets.urls.config.url, {
         params: {configId: pid.id, scope: pid.scope, ...state.portlets.urls.config.params}
@@ -90,18 +108,10 @@ class Services {
       else throw (`Config not found on server for ${pid.scope}${pid.id}`)
       return pcd
     } catch (err) {
-      let fname = state.portlets.config.replace('<id>', '' + pid.scope + pid.id)
-      console.log('reading portlet config from cache file', fname, 'Error was', err)
-      try {
-        let portlet = fs.readFileSync(fname, 'utf8')
-        // let pcd = transformPortletConfig(JSON.parse(portlet))
-        // console.log('after transform', pcd)
-        return JSON.parse(portlet)
-        // this.dispatch('cachePortletConfigData')
-      } catch (err) {
-        console.log('Error getting config data from file', err)
-      }
+      console.log('reading portlet config from cache. Error was', err)
+      getCache()
     }
+    return state.portletConfigData
   }
 
   async cachePortletConfigData () {
@@ -113,7 +123,7 @@ class Services {
 
     let p = state.portletConfigData
       let fname = state.portlets.config.replace('<id>', '' + p.scope + p.id)
-      fs.writeFile(fname, JSON.stringify(p), 'utf8', (err) => {
+      fs.writeFile(fname, JSON.stringify(p, null, '\t'), 'utf8', (err) => {
         if (err) console.log('Error writing config to cache', err, fname)
         else console.log('config saved to cache', fname)
       })
@@ -128,6 +138,15 @@ class Services {
     }
     let def
     const path = `${state.directories.datavolumes}${dvbase.sysid}\/${dvbase.basehash}`
+    function getCache() {
+      try {
+        return JSON.parse(fs.readFileSync(`${path}\/definition.json`, 'utf8'))
+      } catch (err) {
+        throw(err)
+      }
+    }
+    if (state.offline) getCache()
+    else
     try {
       switch (source.systype) {
         case 'sapbw':
@@ -140,11 +159,7 @@ class Services {
       this.cacheDefinition({path: path, data: def, source: source})
     } catch (err) {
       console.log('loading definition from cache. Exception was', err)
-      try {
-        def = JSON.parse(fs.readFileSync(`${path}\/definition.json`, 'utf8'))
-      } catch (err) {
-        throw(err)
-      }
+      def = getCache()
     }
     state.datavolume = {definition: def, data: null, source: source, dvbase: dvbase}
     return state.datavolume
@@ -156,11 +171,11 @@ class Services {
       if (err) console.error('cacheDefinition', err)
       else console.log('created:', obj.path)
     });
-    fs.writeFile(`${obj.path}\/definition.json`, JSON.stringify(obj.data), 'utf8', (err) => {
+    fs.writeFile(`${obj.path}\/definition.json`, JSON.stringify(obj.data, null, '\t'), 'utf8', (err) => {
       if (err) console.log('Error writing definition to cache', err, path)
       else console.log('definition saved to cache', obj.path)
     })
-    fs.writeFile(`${obj.path}\/source.json`, JSON.stringify(obj.source), 'utf8', (err) => {
+    fs.writeFile(`${obj.path}\/source.json`, JSON.stringify(obj.source, null, '\t'), 'utf8', (err) => {
       if (err) console.log('Error writing source to cache', err, path)
       else console.log('source saved to cache', obj.path)
     })
@@ -172,6 +187,18 @@ class Services {
     let data
     let source = state.datavolume.source
     let dvbase = state.datavolume.dvbase
+
+    function getCache() {
+      try {
+            const path = `${state.directories.datavolumes}${dvbase.sysid}\/${dvbase.basehash}\/${md5(JSON.stringify(params))}.json`
+            data = JSON.parse(fs.readFileSync(path, 'utf8'))
+            state.datavolume = {definition: state.datavolume.definition, data: data, source: source,  dvbase: dvbase}
+          } catch (err) {
+            throw (err)
+          }
+    }
+    if (state.offline) getCache()
+    else
     try {
       switch (source.systype) {
         case 'sapbw':
@@ -185,13 +212,7 @@ class Services {
       this.cacheDatavolumeData(params)
     } catch (err) {
       console.log('loading data from cache. Exception was', err)
-      try {
-        const path = `${state.directories.datavolumes}${dvbase.sysid}\/${dvbase.basehash}\/${md5(JSON.stringify(params))}.json`
-        data = JSON.parse(fs.readFileSync(path, 'utf8'))
-        state.datavolume = {definition: state.datavolume.definition, data: data, source: source,  dvbase: dvbase}
-      } catch (err) {
-        throw (err)
-      }
+      getCache()
     }
     return state.datavolume
 
@@ -202,7 +223,7 @@ class Services {
     let source = state.datavolume.source
     let dvbase = state.datavolume.dvbase
     const path = `${state.directories.datavolumes}${dvbase.sysid}\/${dvbase.basehash}\/${md5(JSON.stringify(params))}.json`
-    fs.writeFile(path, JSON.stringify(state.datavolume.data), 'utf8', (err) => {
+    fs.writeFile(path, JSON.stringify(state.datavolume.data, null, '\t'), 'utf8', (err) => {
       if (err) console.log('Error writing datavolume to cache', err)
       else console.log('Datavolume saved to cache', path)
     })
@@ -239,6 +260,10 @@ export class RoiLoader {
     return state.datavolume.data
   }
 
+  set offline(offline) {
+    state.offline = offline
+  }
+
   async getPortletHeaders () {
     let data = await services.getPortletHeaders()
     console.log('data from roiloader', data)
@@ -246,6 +271,12 @@ export class RoiLoader {
   }
 
   async getPortletConfig (pid) {
+    if (typeof pid === 'string') {
+      let [p, scope, id] = pid.match(/([A-Za-z]+)(\d+)/i)
+      console.log('pid is string', pid, p, scope, id)
+      pid = {id: id, scope: scope}
+    }
+
     console.log('getPortletConfig pid', pid)
     let data = await services.getPortletConfig(pid)
     state.portletConfigData = data
@@ -276,6 +307,10 @@ export class RoiDataLoader {
 
   get version() {
     return this.rl.version
+  }
+
+  set offline(offline) {
+    this.rl.offline = offline
   }
 
   async getPortletHeaders() {
