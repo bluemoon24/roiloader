@@ -35,8 +35,7 @@
 </template>
 
 <script>
-import { RoiDataLoader, RoiLoader } from '@/components/roi-dataloader.js'
-import arcgis from '@/services/arcgis.js'
+import { RoiDataLoader, RoiLoader } from '@/components/roi-loader.js'
 
 export default {
   name: 'roi-loader',
@@ -68,6 +67,7 @@ export default {
   },
 
   methods: {
+
     async getPortletHeaders() {
       this.taloading = true
       this.data = await this.rdl.getPortletHeaders()
